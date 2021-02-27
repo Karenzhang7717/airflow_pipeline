@@ -1,0 +1,10 @@
+{
+    "name": "karen-data-ingestion",
+    "schedule": "10 * * * *",
+    "stock_symbols": [
+        "GME",
+        "BB",
+        "AMC",
+        "BIT"
+    ]
+}
