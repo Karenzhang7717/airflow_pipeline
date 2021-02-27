@@ -1,0 +1,873 @@
+[2021-02-27 09:12:50,607] {scheduler_job.py:182} INFO - Started process (PID=21764) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:12:50,608] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 09:12:50,608] {logging_mixin.py:104} INFO - [2021-02-27 09:12:50,608] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:12:50,612] {logging_mixin.py:104} INFO - [2021-02-27 09:12:50,612] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 09:12:50,612] {logging_mixin.py:104} INFO - [2021-02-27 09:12:50,612] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 09:12:50,612] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:12:50,636] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.029 seconds
+[2021-02-27 09:13:38,360] {scheduler_job.py:182} INFO - Started process (PID=21795) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:13:38,360] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 09:13:38,361] {logging_mixin.py:104} INFO - [2021-02-27 09:13:38,361] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:13:38,365] {logging_mixin.py:104} INFO - [2021-02-27 09:13:38,365] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 09:13:38,365] {logging_mixin.py:104} INFO - [2021-02-27 09:13:38,365] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 09:13:38,365] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:13:38,391] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.032 seconds
+[2021-02-27 09:14:30,521] {scheduler_job.py:182} INFO - Started process (PID=21833) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:14:30,521] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 09:14:30,522] {logging_mixin.py:104} INFO - [2021-02-27 09:14:30,521] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:14:30,525] {logging_mixin.py:104} INFO - [2021-02-27 09:14:30,525] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 09:14:30,525] {logging_mixin.py:104} INFO - [2021-02-27 09:14:30,525] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 09:14:30,525] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:14:30,550] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.030 seconds
+[2021-02-27 09:15:21,429] {scheduler_job.py:182} INFO - Started process (PID=21892) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:15:21,429] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 09:15:21,429] {logging_mixin.py:104} INFO - [2021-02-27 09:15:21,429] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:15:21,433] {logging_mixin.py:104} INFO - [2021-02-27 09:15:21,433] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 09:15:21,434] {logging_mixin.py:104} INFO - [2021-02-27 09:15:21,433] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 09:15:21,434] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:15:21,460] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.032 seconds
+[2021-02-27 09:15:38,745] {scheduler_job.py:182} INFO - Started process (PID=21922) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:15:38,746] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 09:15:38,746] {logging_mixin.py:104} INFO - [2021-02-27 09:15:38,746] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:15:38,750] {logging_mixin.py:104} INFO - [2021-02-27 09:15:38,750] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 09:15:38,750] {logging_mixin.py:104} INFO - [2021-02-27 09:15:38,750] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 09:15:38,750] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:15:38,776] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.031 seconds
+[2021-02-27 09:16:18,369] {scheduler_job.py:182} INFO - Started process (PID=21962) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:16:18,370] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 09:16:18,371] {logging_mixin.py:104} INFO - [2021-02-27 09:16:18,371] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:16:18,381] {logging_mixin.py:104} INFO - [2021-02-27 09:16:18,381] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 09:16:18,381] {logging_mixin.py:104} INFO - [2021-02-27 09:16:18,381] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 09:16:18,381] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:16:18,420] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.052 seconds
+[2021-02-27 09:17:12,394] {scheduler_job.py:182} INFO - Started process (PID=22007) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:17:12,395] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 09:17:12,396] {logging_mixin.py:104} INFO - [2021-02-27 09:17:12,396] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:17:12,400] {logging_mixin.py:104} INFO - [2021-02-27 09:17:12,400] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 09:17:12,400] {logging_mixin.py:104} INFO - [2021-02-27 09:17:12,400] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 09:17:12,401] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:17:12,426] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.033 seconds
+[2021-02-27 09:18:04,345] {scheduler_job.py:182} INFO - Started process (PID=22059) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:18:04,346] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 09:18:04,347] {logging_mixin.py:104} INFO - [2021-02-27 09:18:04,347] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:18:04,353] {logging_mixin.py:104} INFO - [2021-02-27 09:18:04,353] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 09:18:04,353] {logging_mixin.py:104} INFO - [2021-02-27 09:18:04,353] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 09:18:04,354] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:18:04,377] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.033 seconds
+[2021-02-27 09:18:51,979] {scheduler_job.py:182} INFO - Started process (PID=22106) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:18:51,980] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 09:18:51,981] {logging_mixin.py:104} INFO - [2021-02-27 09:18:51,981] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:18:51,987] {logging_mixin.py:104} INFO - [2021-02-27 09:18:51,987] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 09:18:51,987] {logging_mixin.py:104} INFO - [2021-02-27 09:18:51,987] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 09:18:51,987] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:18:52,011] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.033 seconds
+[2021-02-27 09:19:48,726] {scheduler_job.py:182} INFO - Started process (PID=22166) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:19:48,728] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 09:19:48,728] {logging_mixin.py:104} INFO - [2021-02-27 09:19:48,728] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:19:48,735] {logging_mixin.py:104} INFO - [2021-02-27 09:19:48,735] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 09:19:48,735] {logging_mixin.py:104} INFO - [2021-02-27 09:19:48,735] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 09:19:48,735] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:19:48,760] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.034 seconds
+[2021-02-27 09:20:43,677] {scheduler_job.py:182} INFO - Started process (PID=22209) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:20:43,677] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 09:20:43,678] {logging_mixin.py:104} INFO - [2021-02-27 09:20:43,678] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:20:43,682] {logging_mixin.py:104} INFO - [2021-02-27 09:20:43,681] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 09:20:43,682] {logging_mixin.py:104} INFO - [2021-02-27 09:20:43,682] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 09:20:43,682] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:20:43,707] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.031 seconds
+[2021-02-27 09:21:38,283] {scheduler_job.py:182} INFO - Started process (PID=22248) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:21:38,284] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 09:21:38,285] {logging_mixin.py:104} INFO - [2021-02-27 09:21:38,285] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:21:38,289] {logging_mixin.py:104} INFO - [2021-02-27 09:21:38,289] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 09:21:38,289] {logging_mixin.py:104} INFO - [2021-02-27 09:21:38,289] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 09:21:38,289] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:21:38,313] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.030 seconds
+[2021-02-27 09:22:33,844] {scheduler_job.py:182} INFO - Started process (PID=22287) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:22:33,846] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 09:22:33,847] {logging_mixin.py:104} INFO - [2021-02-27 09:22:33,847] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:22:33,855] {logging_mixin.py:104} INFO - [2021-02-27 09:22:33,854] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 09:22:33,855] {logging_mixin.py:104} INFO - [2021-02-27 09:22:33,855] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 09:22:33,855] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:22:33,882] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.038 seconds
+[2021-02-27 09:23:21,505] {scheduler_job.py:182} INFO - Started process (PID=22322) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:23:21,506] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 09:23:21,507] {logging_mixin.py:104} INFO - [2021-02-27 09:23:21,507] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:23:21,512] {logging_mixin.py:104} INFO - [2021-02-27 09:23:21,512] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 09:23:21,512] {logging_mixin.py:104} INFO - [2021-02-27 09:23:21,512] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 09:23:21,513] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:23:21,537] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.032 seconds
+[2021-02-27 09:24:20,258] {scheduler_job.py:182} INFO - Started process (PID=22382) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:24:20,259] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 09:24:20,259] {logging_mixin.py:104} INFO - [2021-02-27 09:24:20,259] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:24:20,266] {logging_mixin.py:104} INFO - [2021-02-27 09:24:20,266] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 09:24:20,266] {logging_mixin.py:104} INFO - [2021-02-27 09:24:20,266] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 09:24:20,266] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:24:20,294] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.037 seconds
+[2021-02-27 09:25:21,055] {scheduler_job.py:182} INFO - Started process (PID=22425) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:25:21,055] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 09:25:21,055] {logging_mixin.py:104} INFO - [2021-02-27 09:25:21,055] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:25:21,059] {logging_mixin.py:104} INFO - [2021-02-27 09:25:21,059] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 09:25:21,059] {logging_mixin.py:104} INFO - [2021-02-27 09:25:21,059] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 09:25:21,060] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:25:21,084] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.030 seconds
+[2021-02-27 09:26:12,194] {scheduler_job.py:182} INFO - Started process (PID=22471) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:26:12,194] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 09:26:12,195] {logging_mixin.py:104} INFO - [2021-02-27 09:26:12,194] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:26:12,199] {logging_mixin.py:104} INFO - [2021-02-27 09:26:12,198] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 09:26:12,199] {logging_mixin.py:104} INFO - [2021-02-27 09:26:12,199] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 09:26:12,199] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:26:12,225] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.032 seconds
+[2021-02-27 09:27:04,679] {scheduler_job.py:182} INFO - Started process (PID=22504) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:27:04,679] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 09:27:04,680] {logging_mixin.py:104} INFO - [2021-02-27 09:27:04,680] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:27:04,683] {logging_mixin.py:104} INFO - [2021-02-27 09:27:04,683] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 09:27:04,683] {logging_mixin.py:104} INFO - [2021-02-27 09:27:04,683] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 09:27:04,684] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:27:04,707] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.029 seconds
+[2021-02-27 09:27:55,547] {scheduler_job.py:182} INFO - Started process (PID=22551) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:27:55,547] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 09:27:55,547] {logging_mixin.py:104} INFO - [2021-02-27 09:27:55,547] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:27:55,551] {logging_mixin.py:104} INFO - [2021-02-27 09:27:55,551] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 09:27:55,551] {logging_mixin.py:104} INFO - [2021-02-27 09:27:55,551] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 09:27:55,551] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:27:55,575] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.029 seconds
+[2021-02-27 09:28:43,921] {scheduler_job.py:182} INFO - Started process (PID=22585) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:28:43,921] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 09:28:43,922] {logging_mixin.py:104} INFO - [2021-02-27 09:28:43,922] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:28:43,925] {logging_mixin.py:104} INFO - [2021-02-27 09:28:43,925] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 09:28:43,925] {logging_mixin.py:104} INFO - [2021-02-27 09:28:43,925] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 09:28:43,925] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:28:43,948] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.028 seconds
+[2021-02-27 09:29:32,966] {scheduler_job.py:182} INFO - Started process (PID=22626) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:29:32,967] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 09:29:32,967] {logging_mixin.py:104} INFO - [2021-02-27 09:29:32,967] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:29:32,972] {logging_mixin.py:104} INFO - [2021-02-27 09:29:32,972] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 09:29:32,972] {logging_mixin.py:104} INFO - [2021-02-27 09:29:32,972] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 09:29:32,972] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:29:32,998] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.033 seconds
+[2021-02-27 09:30:31,253] {scheduler_job.py:182} INFO - Started process (PID=22672) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:30:31,253] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 09:30:31,253] {logging_mixin.py:104} INFO - [2021-02-27 09:30:31,253] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:30:31,257] {logging_mixin.py:104} INFO - [2021-02-27 09:30:31,257] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 09:30:31,257] {logging_mixin.py:104} INFO - [2021-02-27 09:30:31,257] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 09:30:31,257] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:30:31,282] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.029 seconds
+[2021-02-27 09:31:30,241] {scheduler_job.py:182} INFO - Started process (PID=22711) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:31:30,241] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 09:31:30,242] {logging_mixin.py:104} INFO - [2021-02-27 09:31:30,242] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:31:30,246] {logging_mixin.py:104} INFO - [2021-02-27 09:31:30,246] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 09:31:30,246] {logging_mixin.py:104} INFO - [2021-02-27 09:31:30,246] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 09:31:30,246] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:31:30,271] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.031 seconds
+[2021-02-27 09:32:24,972] {scheduler_job.py:182} INFO - Started process (PID=22750) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:32:24,972] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 09:32:24,973] {logging_mixin.py:104} INFO - [2021-02-27 09:32:24,973] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:32:24,977] {logging_mixin.py:104} INFO - [2021-02-27 09:32:24,977] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 09:32:24,977] {logging_mixin.py:104} INFO - [2021-02-27 09:32:24,977] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 09:32:24,977] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:32:25,004] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.033 seconds
+[2021-02-27 09:33:15,756] {scheduler_job.py:182} INFO - Started process (PID=22784) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:33:15,757] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 09:33:15,758] {logging_mixin.py:104} INFO - [2021-02-27 09:33:15,758] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:33:15,762] {logging_mixin.py:104} INFO - [2021-02-27 09:33:15,762] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 09:33:15,762] {logging_mixin.py:104} INFO - [2021-02-27 09:33:15,762] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 09:33:15,762] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:33:15,791] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.035 seconds
+[2021-02-27 09:34:08,647] {scheduler_job.py:182} INFO - Started process (PID=22825) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:34:08,649] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 09:34:08,649] {logging_mixin.py:104} INFO - [2021-02-27 09:34:08,649] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:34:08,653] {logging_mixin.py:104} INFO - [2021-02-27 09:34:08,653] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 09:34:08,653] {logging_mixin.py:104} INFO - [2021-02-27 09:34:08,653] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 09:34:08,654] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:34:08,678] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.031 seconds
+[2021-02-27 09:34:57,005] {scheduler_job.py:182} INFO - Started process (PID=22861) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:34:57,006] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 09:34:57,006] {logging_mixin.py:104} INFO - [2021-02-27 09:34:57,006] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:34:57,010] {logging_mixin.py:104} INFO - [2021-02-27 09:34:57,010] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 09:34:57,010] {logging_mixin.py:104} INFO - [2021-02-27 09:34:57,010] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 09:34:57,010] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:34:57,037] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.033 seconds
+[2021-02-27 09:35:49,007] {scheduler_job.py:182} INFO - Started process (PID=22898) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:35:49,008] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 09:35:49,008] {logging_mixin.py:104} INFO - [2021-02-27 09:35:49,008] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:35:49,014] {logging_mixin.py:104} INFO - [2021-02-27 09:35:49,014] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 09:35:49,015] {logging_mixin.py:104} INFO - [2021-02-27 09:35:49,014] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 09:35:49,015] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:35:49,040] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.034 seconds
+[2021-02-27 09:36:48,361] {scheduler_job.py:182} INFO - Started process (PID=22940) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:36:48,361] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 09:36:48,362] {logging_mixin.py:104} INFO - [2021-02-27 09:36:48,362] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:36:48,366] {logging_mixin.py:104} INFO - [2021-02-27 09:36:48,366] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 09:36:48,366] {logging_mixin.py:104} INFO - [2021-02-27 09:36:48,366] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 09:36:48,366] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:36:48,393] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.032 seconds
+[2021-02-27 09:37:41,802] {scheduler_job.py:182} INFO - Started process (PID=22976) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:37:41,803] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 09:37:41,803] {logging_mixin.py:104} INFO - [2021-02-27 09:37:41,803] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:37:41,807] {logging_mixin.py:104} INFO - [2021-02-27 09:37:41,806] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 09:37:41,807] {logging_mixin.py:104} INFO - [2021-02-27 09:37:41,807] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 09:37:41,807] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:37:41,829] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.028 seconds
+[2021-02-27 09:38:29,625] {scheduler_job.py:182} INFO - Started process (PID=23010) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:38:29,626] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 09:38:29,626] {logging_mixin.py:104} INFO - [2021-02-27 09:38:29,626] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:38:29,630] {logging_mixin.py:104} INFO - [2021-02-27 09:38:29,629] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 09:38:29,630] {logging_mixin.py:104} INFO - [2021-02-27 09:38:29,630] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 09:38:29,630] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:38:29,654] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.030 seconds
+[2021-02-27 09:39:16,172] {scheduler_job.py:182} INFO - Started process (PID=23047) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:39:16,172] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 09:39:16,172] {logging_mixin.py:104} INFO - [2021-02-27 09:39:16,172] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:39:16,176] {logging_mixin.py:104} INFO - [2021-02-27 09:39:16,176] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 09:39:16,176] {logging_mixin.py:104} INFO - [2021-02-27 09:39:16,176] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 09:39:16,176] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:39:16,201] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.030 seconds
+[2021-02-27 09:40:04,133] {scheduler_job.py:182} INFO - Started process (PID=23078) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:40:04,133] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 09:40:04,134] {logging_mixin.py:104} INFO - [2021-02-27 09:40:04,134] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:40:04,137] {logging_mixin.py:104} INFO - [2021-02-27 09:40:04,137] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 09:40:04,138] {logging_mixin.py:104} INFO - [2021-02-27 09:40:04,138] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 09:40:04,138] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:40:04,162] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.030 seconds
+[2021-02-27 09:40:48,766] {scheduler_job.py:182} INFO - Started process (PID=23109) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:40:48,767] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 09:40:48,767] {logging_mixin.py:104} INFO - [2021-02-27 09:40:48,767] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:40:48,771] {logging_mixin.py:104} INFO - [2021-02-27 09:40:48,771] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 09:40:48,771] {logging_mixin.py:104} INFO - [2021-02-27 09:40:48,771] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 09:40:48,771] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:40:48,796] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.030 seconds
+[2021-02-27 09:41:35,956] {scheduler_job.py:182} INFO - Started process (PID=23142) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:41:35,956] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 09:41:35,957] {logging_mixin.py:104} INFO - [2021-02-27 09:41:35,957] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:41:35,960] {logging_mixin.py:104} INFO - [2021-02-27 09:41:35,960] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 09:41:35,961] {logging_mixin.py:104} INFO - [2021-02-27 09:41:35,961] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 09:41:35,961] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:41:35,985] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.030 seconds
+[2021-02-27 09:42:22,995] {scheduler_job.py:182} INFO - Started process (PID=23177) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:42:22,995] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 09:42:22,995] {logging_mixin.py:104} INFO - [2021-02-27 09:42:22,995] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:42:22,999] {logging_mixin.py:104} INFO - [2021-02-27 09:42:22,999] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 09:42:22,999] {logging_mixin.py:104} INFO - [2021-02-27 09:42:22,999] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 09:42:22,999] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:42:23,022] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.028 seconds
+[2021-02-27 09:43:10,663] {scheduler_job.py:182} INFO - Started process (PID=23211) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:43:10,664] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 09:43:10,665] {logging_mixin.py:104} INFO - [2021-02-27 09:43:10,665] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:43:10,671] {logging_mixin.py:104} INFO - [2021-02-27 09:43:10,671] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 09:43:10,671] {logging_mixin.py:104} INFO - [2021-02-27 09:43:10,671] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 09:43:10,671] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:43:10,706] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.045 seconds
+[2021-02-27 09:43:58,139] {scheduler_job.py:182} INFO - Started process (PID=23244) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:43:58,140] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 09:43:58,140] {logging_mixin.py:104} INFO - [2021-02-27 09:43:58,140] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:43:58,144] {logging_mixin.py:104} INFO - [2021-02-27 09:43:58,144] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 09:43:58,144] {logging_mixin.py:104} INFO - [2021-02-27 09:43:58,144] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 09:43:58,144] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:43:58,172] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.034 seconds
+[2021-02-27 09:44:49,098] {scheduler_job.py:182} INFO - Started process (PID=23283) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:44:49,099] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 09:44:49,099] {logging_mixin.py:104} INFO - [2021-02-27 09:44:49,099] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:44:49,103] {logging_mixin.py:104} INFO - [2021-02-27 09:44:49,103] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 09:44:49,103] {logging_mixin.py:104} INFO - [2021-02-27 09:44:49,103] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 09:44:49,103] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:44:49,127] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.029 seconds
+[2021-02-27 09:45:42,754] {scheduler_job.py:182} INFO - Started process (PID=23319) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:45:42,755] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 09:45:42,755] {logging_mixin.py:104} INFO - [2021-02-27 09:45:42,755] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:45:42,759] {logging_mixin.py:104} INFO - [2021-02-27 09:45:42,759] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 09:45:42,759] {logging_mixin.py:104} INFO - [2021-02-27 09:45:42,759] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 09:45:42,759] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:45:42,785] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.031 seconds
+[2021-02-27 09:46:30,407] {scheduler_job.py:182} INFO - Started process (PID=23352) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:46:30,407] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 09:46:30,408] {logging_mixin.py:104} INFO - [2021-02-27 09:46:30,408] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:46:30,411] {logging_mixin.py:104} INFO - [2021-02-27 09:46:30,411] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 09:46:30,412] {logging_mixin.py:104} INFO - [2021-02-27 09:46:30,412] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 09:46:30,412] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:46:30,438] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.031 seconds
+[2021-02-27 09:47:22,708] {scheduler_job.py:182} INFO - Started process (PID=23397) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:47:22,708] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 09:47:22,708] {logging_mixin.py:104} INFO - [2021-02-27 09:47:22,708] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:47:22,712] {logging_mixin.py:104} INFO - [2021-02-27 09:47:22,712] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 09:47:22,712] {logging_mixin.py:104} INFO - [2021-02-27 09:47:22,712] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 09:47:22,712] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:47:22,736] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.029 seconds
+[2021-02-27 09:48:33,139] {scheduler_job.py:182} INFO - Started process (PID=23473) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:48:33,140] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 09:48:33,140] {logging_mixin.py:104} INFO - [2021-02-27 09:48:33,140] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:48:33,147] {logging_mixin.py:104} INFO - [2021-02-27 09:48:33,147] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 09:48:33,147] {logging_mixin.py:104} INFO - [2021-02-27 09:48:33,147] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 09:48:33,147] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:48:33,177] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.039 seconds
+[2021-02-27 09:49:37,608] {scheduler_job.py:182} INFO - Started process (PID=23533) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:49:37,609] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 09:49:37,609] {logging_mixin.py:104} INFO - [2021-02-27 09:49:37,609] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:49:37,616] {logging_mixin.py:104} INFO - [2021-02-27 09:49:37,616] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 09:49:37,616] {logging_mixin.py:104} INFO - [2021-02-27 09:49:37,616] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 09:49:37,616] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 09:49:37,640] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.033 seconds
+[2021-02-27 10:08:07,398] {scheduler_job.py:182} INFO - Started process (PID=24629) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:08:07,399] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 10:08:07,400] {logging_mixin.py:104} INFO - [2021-02-27 10:08:07,400] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:08:07,405] {logging_mixin.py:104} INFO - [2021-02-27 10:08:07,405] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 10:08:07,406] {logging_mixin.py:104} INFO - [2021-02-27 10:08:07,406] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 10:08:07,406] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:08:07,433] {scheduler_job.py:193} ERROR - Got an exception! Propagating...
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 508, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.9/site-packages/psycopg2/__init__.py", line 127, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "postgres" to address: nodename nor servname provided, or not known
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/airflow/jobs/scheduler_job.py", line 184, in _run_file_processor
+    result: Tuple[int, int] = dag_file_processor.process_file(
+  File "/usr/local/lib/python3.9/site-packages/airflow/utils/session.py", line 65, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/airflow/jobs/scheduler_job.py", line 642, in process_file
+    self.update_import_errors(session, dagbag)
+  File "/usr/local/lib/python3.9/site-packages/airflow/jobs/scheduler_job.py", line 533, in update_import_errors
+    session.query(errors.ImportError).filter(errors.ImportError.filename == dagbag_file).delete()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3926, in delete
+    delete_op.exec_()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/persistence.py", line 1697, in exec_
+    self._do_exec()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/persistence.py", line 1930, in _do_exec
+    self._execute_stmt(delete_stmt)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/persistence.py", line 1702, in _execute_stmt
+    self.result = self.query._execute_crud(stmt, self.mapper)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3564, in _execute_crud
+    conn = self._connection_from_session(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3550, in _connection_from_session
+    conn = self.session.connection(**kw)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1142, in connection
+    return self._connection_for_bind(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1150, in _connection_for_bind
+    return self.transaction._connection_for_bind(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 433, in _connection_for_bind
+    conn = bind._contextual_connect()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2302, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2339, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1583, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 508, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.9/site-packages/psycopg2/__init__.py", line 127, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "postgres" to address: nodename nor servname provided, or not known
+
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+[2021-02-27 10:09:18,142] {scheduler_job.py:182} INFO - Started process (PID=24700) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:09:18,143] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 10:09:18,143] {logging_mixin.py:104} INFO - [2021-02-27 10:09:18,143] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:09:18,150] {logging_mixin.py:104} INFO - [2021-02-27 10:09:18,150] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 10:09:18,150] {logging_mixin.py:104} INFO - [2021-02-27 10:09:18,150] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 10:09:18,150] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:09:18,179] {scheduler_job.py:193} ERROR - Got an exception! Propagating...
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 508, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.9/site-packages/psycopg2/__init__.py", line 127, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: FATAL:  role "karenzhang" does not exist
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/airflow/jobs/scheduler_job.py", line 184, in _run_file_processor
+    result: Tuple[int, int] = dag_file_processor.process_file(
+  File "/usr/local/lib/python3.9/site-packages/airflow/utils/session.py", line 65, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/airflow/jobs/scheduler_job.py", line 642, in process_file
+    self.update_import_errors(session, dagbag)
+  File "/usr/local/lib/python3.9/site-packages/airflow/jobs/scheduler_job.py", line 533, in update_import_errors
+    session.query(errors.ImportError).filter(errors.ImportError.filename == dagbag_file).delete()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3926, in delete
+    delete_op.exec_()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/persistence.py", line 1697, in exec_
+    self._do_exec()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/persistence.py", line 1930, in _do_exec
+    self._execute_stmt(delete_stmt)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/persistence.py", line 1702, in _execute_stmt
+    self.result = self.query._execute_crud(stmt, self.mapper)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3564, in _execute_crud
+    conn = self._connection_from_session(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3550, in _connection_from_session
+    conn = self.session.connection(**kw)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1142, in connection
+    return self._connection_for_bind(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1150, in _connection_for_bind
+    return self.transaction._connection_for_bind(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 433, in _connection_for_bind
+    conn = bind._contextual_connect()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2302, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2339, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1583, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 508, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.9/site-packages/psycopg2/__init__.py", line 127, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) FATAL:  role "karenzhang" does not exist
+
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+[2021-02-27 10:10:24,296] {scheduler_job.py:182} INFO - Started process (PID=24818) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:10:24,297] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 10:10:24,298] {logging_mixin.py:104} INFO - [2021-02-27 10:10:24,298] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:10:24,302] {logging_mixin.py:104} INFO - [2021-02-27 10:10:24,302] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 10:10:24,302] {logging_mixin.py:104} INFO - [2021-02-27 10:10:24,302] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 10:10:24,302] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:10:24,332] {scheduler_job.py:193} ERROR - Got an exception! Propagating...
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 508, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.9/site-packages/psycopg2/__init__.py", line 127, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: FATAL:  role "karenzhang" does not exist
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/airflow/jobs/scheduler_job.py", line 184, in _run_file_processor
+    result: Tuple[int, int] = dag_file_processor.process_file(
+  File "/usr/local/lib/python3.9/site-packages/airflow/utils/session.py", line 65, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/airflow/jobs/scheduler_job.py", line 642, in process_file
+    self.update_import_errors(session, dagbag)
+  File "/usr/local/lib/python3.9/site-packages/airflow/jobs/scheduler_job.py", line 533, in update_import_errors
+    session.query(errors.ImportError).filter(errors.ImportError.filename == dagbag_file).delete()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3926, in delete
+    delete_op.exec_()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/persistence.py", line 1697, in exec_
+    self._do_exec()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/persistence.py", line 1930, in _do_exec
+    self._execute_stmt(delete_stmt)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/persistence.py", line 1702, in _execute_stmt
+    self.result = self.query._execute_crud(stmt, self.mapper)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3564, in _execute_crud
+    conn = self._connection_from_session(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3550, in _connection_from_session
+    conn = self.session.connection(**kw)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1142, in connection
+    return self._connection_for_bind(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1150, in _connection_for_bind
+    return self.transaction._connection_for_bind(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 433, in _connection_for_bind
+    conn = bind._contextual_connect()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2302, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2339, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1583, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 508, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.9/site-packages/psycopg2/__init__.py", line 127, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) FATAL:  role "karenzhang" does not exist
+
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+[2021-02-27 10:11:28,009] {scheduler_job.py:182} INFO - Started process (PID=24932) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:11:28,010] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 10:11:28,011] {logging_mixin.py:104} INFO - [2021-02-27 10:11:28,011] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:11:28,018] {logging_mixin.py:104} INFO - [2021-02-27 10:11:28,018] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 10:11:28,018] {logging_mixin.py:104} INFO - [2021-02-27 10:11:28,018] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 10:11:28,018] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:11:28,056] {scheduler_job.py:193} ERROR - Got an exception! Propagating...
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1276, in _execute_context
+    self.dialect.do_execute(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 608, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedTable: relation "import_error" does not exist
+LINE 1: DELETE FROM import_error WHERE import_error.filename = '/usr...
+                    ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/airflow/jobs/scheduler_job.py", line 184, in _run_file_processor
+    result: Tuple[int, int] = dag_file_processor.process_file(
+  File "/usr/local/lib/python3.9/site-packages/airflow/utils/session.py", line 65, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/airflow/jobs/scheduler_job.py", line 642, in process_file
+    self.update_import_errors(session, dagbag)
+  File "/usr/local/lib/python3.9/site-packages/airflow/jobs/scheduler_job.py", line 533, in update_import_errors
+    session.query(errors.ImportError).filter(errors.ImportError.filename == dagbag_file).delete()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3926, in delete
+    delete_op.exec_()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/persistence.py", line 1697, in exec_
+    self._do_exec()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/persistence.py", line 1930, in _do_exec
+    self._execute_stmt(delete_stmt)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/persistence.py", line 1702, in _execute_stmt
+    self.result = self.query._execute_crud(stmt, self.mapper)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3568, in _execute_crud
+    return conn.execute(stmt, self._params)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1011, in execute
+    return meth(self, multiparams, params)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/sql/elements.py", line 298, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1124, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1316, in _execute_context
+    self._handle_dbapi_exception(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1510, in _handle_dbapi_exception
+    util.raise_(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1276, in _execute_context
+    self.dialect.do_execute(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 608, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedTable) relation "import_error" does not exist
+LINE 1: DELETE FROM import_error WHERE import_error.filename = '/usr...
+                    ^
+
+[SQL: DELETE FROM import_error WHERE import_error.filename = %(filename_1)s]
+[parameters: {'filename_1': '/usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py'}]
+(Background on this error at: http://sqlalche.me/e/13/f405)
+[2021-02-27 10:12:20,522] {scheduler_job.py:182} INFO - Started process (PID=25016) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:12:20,524] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 10:12:20,524] {logging_mixin.py:104} INFO - [2021-02-27 10:12:20,524] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:12:20,529] {logging_mixin.py:104} INFO - [2021-02-27 10:12:20,529] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 10:12:20,530] {logging_mixin.py:104} INFO - [2021-02-27 10:12:20,530] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 10:12:20,530] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:12:20,567] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.045 seconds
+[2021-02-27 10:13:09,434] {scheduler_job.py:182} INFO - Started process (PID=25169) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:13:09,435] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 10:13:09,435] {logging_mixin.py:104} INFO - [2021-02-27 10:13:09,435] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:13:09,440] {logging_mixin.py:104} INFO - [2021-02-27 10:13:09,440] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 10:13:09,440] {logging_mixin.py:104} INFO - [2021-02-27 10:13:09,440] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 10:13:09,441] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:13:09,485] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.052 seconds
+[2021-02-27 10:13:37,184] {scheduler_job.py:182} INFO - Started process (PID=25243) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:13:37,185] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 10:13:37,186] {logging_mixin.py:104} INFO - [2021-02-27 10:13:37,186] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:13:37,195] {logging_mixin.py:104} INFO - [2021-02-27 10:13:37,195] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 10:13:37,195] {logging_mixin.py:104} INFO - [2021-02-27 10:13:37,195] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 10:13:37,195] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:13:37,233] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.050 seconds
+[2021-02-27 10:13:41,990] {scheduler_job.py:182} INFO - Started process (PID=25261) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:13:41,990] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 10:13:41,990] {logging_mixin.py:104} INFO - [2021-02-27 10:13:41,990] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:13:41,995] {logging_mixin.py:104} INFO - [2021-02-27 10:13:41,995] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 10:13:41,995] {logging_mixin.py:104} INFO - [2021-02-27 10:13:41,995] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 10:13:41,995] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:13:42,037] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.048 seconds
+[2021-02-27 10:14:13,488] {scheduler_job.py:182} INFO - Started process (PID=25354) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:14:13,489] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 10:14:13,489] {logging_mixin.py:104} INFO - [2021-02-27 10:14:13,489] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:14:13,494] {logging_mixin.py:104} INFO - [2021-02-27 10:14:13,494] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 10:14:13,494] {logging_mixin.py:104} INFO - [2021-02-27 10:14:13,494] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 10:14:13,494] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:14:13,536] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.049 seconds
+[2021-02-27 10:14:36,626] {scheduler_job.py:182} INFO - Started process (PID=25406) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:14:36,627] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 10:14:36,628] {logging_mixin.py:104} INFO - [2021-02-27 10:14:36,628] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:14:36,633] {logging_mixin.py:104} INFO - [2021-02-27 10:14:36,633] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 10:14:36,634] {logging_mixin.py:104} INFO - [2021-02-27 10:14:36,634] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 10:14:36,634] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:14:36,680] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.055 seconds
+[2021-02-27 10:14:44,917] {scheduler_job.py:182} INFO - Started process (PID=25441) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:14:44,917] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 10:14:44,918] {logging_mixin.py:104} INFO - [2021-02-27 10:14:44,918] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:14:44,923] {logging_mixin.py:104} INFO - [2021-02-27 10:14:44,923] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 10:14:44,923] {logging_mixin.py:104} INFO - [2021-02-27 10:14:44,923] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 10:14:44,923] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:14:44,966] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.051 seconds
+[2021-02-27 10:15:16,017] {scheduler_job.py:182} INFO - Started process (PID=25527) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:15:16,018] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 10:15:16,018] {logging_mixin.py:104} INFO - [2021-02-27 10:15:16,018] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:15:16,024] {logging_mixin.py:104} INFO - [2021-02-27 10:15:16,024] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 10:15:16,024] {logging_mixin.py:104} INFO - [2021-02-27 10:15:16,024] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 10:15:16,024] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:15:16,066] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.050 seconds
+[2021-02-27 10:15:41,956] {scheduler_job.py:182} INFO - Started process (PID=25593) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:15:41,957] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 10:15:41,957] {logging_mixin.py:104} INFO - [2021-02-27 10:15:41,957] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:15:41,963] {logging_mixin.py:104} INFO - [2021-02-27 10:15:41,963] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 10:15:41,963] {logging_mixin.py:104} INFO - [2021-02-27 10:15:41,963] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 10:15:41,963] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:15:42,002] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.047 seconds
+[2021-02-27 10:15:47,106] {scheduler_job.py:182} INFO - Started process (PID=25619) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:15:47,107] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 10:15:47,107] {logging_mixin.py:104} INFO - [2021-02-27 10:15:47,107] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:15:47,111] {logging_mixin.py:104} INFO - [2021-02-27 10:15:47,111] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 10:15:47,111] {logging_mixin.py:104} INFO - [2021-02-27 10:15:47,111] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 10:15:47,111] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:15:47,148] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.043 seconds
+[2021-02-27 10:16:18,653] {scheduler_job.py:182} INFO - Started process (PID=25706) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:16:18,654] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 10:16:18,655] {logging_mixin.py:104} INFO - [2021-02-27 10:16:18,655] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:16:18,660] {logging_mixin.py:104} INFO - [2021-02-27 10:16:18,659] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 10:16:18,660] {logging_mixin.py:104} INFO - [2021-02-27 10:16:18,660] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 10:16:18,660] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:16:18,700] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.048 seconds
+[2021-02-27 10:16:47,821] {scheduler_job.py:182} INFO - Started process (PID=25784) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:16:47,822] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 10:16:47,823] {logging_mixin.py:104} INFO - [2021-02-27 10:16:47,823] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:16:47,829] {logging_mixin.py:104} INFO - [2021-02-27 10:16:47,829] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 10:16:47,829] {logging_mixin.py:104} INFO - [2021-02-27 10:16:47,829] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 10:16:47,829] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:16:47,872] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.051 seconds
+[2021-02-27 10:16:50,097] {scheduler_job.py:182} INFO - Started process (PID=25794) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:16:50,097] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 10:16:50,098] {logging_mixin.py:104} INFO - [2021-02-27 10:16:50,098] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:16:50,102] {logging_mixin.py:104} INFO - [2021-02-27 10:16:50,102] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 10:16:50,102] {logging_mixin.py:104} INFO - [2021-02-27 10:16:50,102] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 10:16:50,102] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:16:50,146] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.050 seconds
+[2021-02-27 10:17:21,221] {scheduler_job.py:182} INFO - Started process (PID=25893) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:17:21,222] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 10:17:21,223] {logging_mixin.py:104} INFO - [2021-02-27 10:17:21,222] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:17:21,228] {logging_mixin.py:104} INFO - [2021-02-27 10:17:21,228] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 10:17:21,228] {logging_mixin.py:104} INFO - [2021-02-27 10:17:21,228] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 10:17:21,228] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:17:21,268] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.048 seconds
+[2021-02-27 10:17:52,469] {scheduler_job.py:182} INFO - Started process (PID=25979) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:17:52,469] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 10:17:52,470] {logging_mixin.py:104} INFO - [2021-02-27 10:17:52,470] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:17:52,474] {logging_mixin.py:104} INFO - [2021-02-27 10:17:52,474] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 10:17:52,474] {logging_mixin.py:104} INFO - [2021-02-27 10:17:52,474] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 10:17:52,474] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:17:52,515] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.047 seconds
+[2021-02-27 10:17:52,966] {scheduler_job.py:182} INFO - Started process (PID=25980) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:17:52,966] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 10:17:52,967] {logging_mixin.py:104} INFO - [2021-02-27 10:17:52,967] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:17:52,971] {logging_mixin.py:104} INFO - [2021-02-27 10:17:52,971] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 10:17:52,971] {logging_mixin.py:104} INFO - [2021-02-27 10:17:52,971] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 10:17:52,971] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:17:53,010] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.045 seconds
+[2021-02-27 10:18:24,275] {scheduler_job.py:182} INFO - Started process (PID=26079) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:18:24,276] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 10:18:24,277] {logging_mixin.py:104} INFO - [2021-02-27 10:18:24,277] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:18:24,282] {logging_mixin.py:104} INFO - [2021-02-27 10:18:24,282] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 10:18:24,282] {logging_mixin.py:104} INFO - [2021-02-27 10:18:24,282] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 10:18:24,283] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:18:24,323] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.049 seconds
+[2021-02-27 10:18:55,680] {scheduler_job.py:182} INFO - Started process (PID=26179) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:18:55,681] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 10:18:55,681] {logging_mixin.py:104} INFO - [2021-02-27 10:18:55,681] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:18:55,689] {logging_mixin.py:104} INFO - [2021-02-27 10:18:55,689] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 10:18:55,689] {logging_mixin.py:104} INFO - [2021-02-27 10:18:55,689] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 10:18:55,689] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:18:55,766] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.087 seconds
+[2021-02-27 10:18:57,741] {scheduler_job.py:182} INFO - Started process (PID=26264) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:18:57,742] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 10:18:57,742] {logging_mixin.py:104} INFO - [2021-02-27 10:18:57,742] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:18:57,746] {logging_mixin.py:104} INFO - [2021-02-27 10:18:57,746] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 10:18:57,746] {logging_mixin.py:104} INFO - [2021-02-27 10:18:57,746] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 10:18:57,747] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:18:57,791] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.051 seconds
+[2021-02-27 10:19:26,692] {scheduler_job.py:182} INFO - Started process (PID=26478) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:19:26,692] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 10:19:26,693] {logging_mixin.py:104} INFO - [2021-02-27 10:19:26,693] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:19:26,698] {logging_mixin.py:104} INFO - [2021-02-27 10:19:26,698] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 10:19:26,698] {logging_mixin.py:104} INFO - [2021-02-27 10:19:26,698] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 10:19:26,698] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:19:26,739] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.049 seconds
+[2021-02-27 10:19:57,724] {scheduler_job.py:182} INFO - Started process (PID=26568) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:19:57,725] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2021-02-27 10:19:57,726] {logging_mixin.py:104} INFO - [2021-02-27 10:19:57,726] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:19:57,733] {logging_mixin.py:104} INFO - [2021-02-27 10:19:57,733] {example_kubernetes_executor_config.py:174} WARNING - Could not import DAGs in example_kubernetes_executor_config.py: No module named 'kubernetes'
+[2021-02-27 10:19:57,733] {logging_mixin.py:104} INFO - [2021-02-27 10:19:57,733] {example_kubernetes_executor_config.py:175} WARNING - Install kubernetes dependencies with: pip install apache-airflow['cncf.kubernetes']
+[2021-02-27 10:19:57,733] {scheduler_job.py:641} WARNING - No viable dags retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2021-02-27 10:19:57,787] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.064 seconds

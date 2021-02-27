@@ -1,0 +1,1046 @@
+[2021-02-27 09:12:42,900] {scheduler_job.py:182} INFO - Started process (PID=21759) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:12:42,901] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 09:12:42,901] {logging_mixin.py:104} INFO - [2021-02-27 09:12:42,901] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:12:42,907] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:12:42,934] {logging_mixin.py:104} INFO - [2021-02-27 09:12:42,933] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 09:12:42,941] {logging_mixin.py:104} INFO - [2021-02-27 09:12:42,941] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 09:12:42,945] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.046 seconds
+[2021-02-27 09:13:29,804] {scheduler_job.py:182} INFO - Started process (PID=21789) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:13:29,805] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 09:13:29,806] {logging_mixin.py:104} INFO - [2021-02-27 09:13:29,806] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:13:29,817] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:13:29,850] {logging_mixin.py:104} INFO - [2021-02-27 09:13:29,850] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 09:13:29,859] {logging_mixin.py:104} INFO - [2021-02-27 09:13:29,859] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 09:13:29,865] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.061 seconds
+[2021-02-27 09:14:21,061] {scheduler_job.py:182} INFO - Started process (PID=21828) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:14:21,061] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 09:14:21,061] {logging_mixin.py:104} INFO - [2021-02-27 09:14:21,061] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:14:21,068] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:14:21,098] {logging_mixin.py:104} INFO - [2021-02-27 09:14:21,098] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 09:14:21,106] {logging_mixin.py:104} INFO - [2021-02-27 09:14:21,106] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 09:14:21,112] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.052 seconds
+[2021-02-27 09:15:11,627] {scheduler_job.py:182} INFO - Started process (PID=21878) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:15:11,627] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 09:15:11,627] {logging_mixin.py:104} INFO - [2021-02-27 09:15:11,627] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:15:11,635] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:15:11,667] {logging_mixin.py:104} INFO - [2021-02-27 09:15:11,667] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 09:15:11,676] {logging_mixin.py:104} INFO - [2021-02-27 09:15:11,676] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 09:15:11,682] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.056 seconds
+[2021-02-27 09:15:49,881] {scheduler_job.py:182} INFO - Started process (PID=21928) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:15:49,881] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 09:15:49,882] {logging_mixin.py:104} INFO - [2021-02-27 09:15:49,882] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:15:49,888] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:15:49,917] {logging_mixin.py:104} INFO - [2021-02-27 09:15:49,917] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 09:15:49,925] {logging_mixin.py:104} INFO - [2021-02-27 09:15:49,925] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 09:15:49,931] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.050 seconds
+[2021-02-27 09:16:43,477] {scheduler_job.py:182} INFO - Started process (PID=21983) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:16:43,478] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 09:16:43,479] {logging_mixin.py:104} INFO - [2021-02-27 09:16:43,479] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:16:43,487] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:16:43,514] {logging_mixin.py:104} INFO - [2021-02-27 09:16:43,514] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 09:16:43,521] {logging_mixin.py:104} INFO - [2021-02-27 09:16:43,521] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 09:16:43,526] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.050 seconds
+[2021-02-27 09:17:33,804] {scheduler_job.py:182} INFO - Started process (PID=22027) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:17:33,805] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 09:17:33,805] {logging_mixin.py:104} INFO - [2021-02-27 09:17:33,805] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:17:33,814] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:17:33,847] {logging_mixin.py:104} INFO - [2021-02-27 09:17:33,847] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 09:17:33,856] {logging_mixin.py:104} INFO - [2021-02-27 09:17:33,856] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 09:17:33,862] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.059 seconds
+[2021-02-27 09:18:31,306] {scheduler_job.py:182} INFO - Started process (PID=22087) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:18:31,306] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 09:18:31,307] {logging_mixin.py:104} INFO - [2021-02-27 09:18:31,306] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:18:31,313] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:18:31,342] {logging_mixin.py:104} INFO - [2021-02-27 09:18:31,342] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 09:18:31,349] {logging_mixin.py:104} INFO - [2021-02-27 09:18:31,349] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 09:18:31,354] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.049 seconds
+[2021-02-27 09:19:21,460] {scheduler_job.py:182} INFO - Started process (PID=22135) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:19:21,461] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 09:19:21,461] {logging_mixin.py:104} INFO - [2021-02-27 09:19:21,461] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:19:21,469] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:19:21,503] {logging_mixin.py:104} INFO - [2021-02-27 09:19:21,503] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 09:19:21,513] {logging_mixin.py:104} INFO - [2021-02-27 09:19:21,513] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 09:19:21,519] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.060 seconds
+[2021-02-27 09:20:02,105] {scheduler_job.py:182} INFO - Started process (PID=22176) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:20:02,106] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 09:20:02,107] {logging_mixin.py:104} INFO - [2021-02-27 09:20:02,107] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:20:02,114] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:20:02,144] {logging_mixin.py:104} INFO - [2021-02-27 09:20:02,144] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 09:20:02,151] {logging_mixin.py:104} INFO - [2021-02-27 09:20:02,151] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 09:20:02,156] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.051 seconds
+[2021-02-27 09:20:52,848] {scheduler_job.py:182} INFO - Started process (PID=22215) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:20:52,849] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 09:20:52,849] {logging_mixin.py:104} INFO - [2021-02-27 09:20:52,849] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:20:52,855] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:20:52,889] {logging_mixin.py:104} INFO - [2021-02-27 09:20:52,889] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 09:20:52,897] {logging_mixin.py:104} INFO - [2021-02-27 09:20:52,897] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 09:20:52,903] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.055 seconds
+[2021-02-27 09:21:49,616] {scheduler_job.py:182} INFO - Started process (PID=22254) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:21:49,616] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 09:21:49,617] {logging_mixin.py:104} INFO - [2021-02-27 09:21:49,616] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:21:49,623] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:21:49,651] {logging_mixin.py:104} INFO - [2021-02-27 09:21:49,651] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 09:21:49,658] {logging_mixin.py:104} INFO - [2021-02-27 09:21:49,658] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 09:21:49,663] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.048 seconds
+[2021-02-27 09:22:42,703] {scheduler_job.py:182} INFO - Started process (PID=22294) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:22:42,704] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 09:22:42,704] {logging_mixin.py:104} INFO - [2021-02-27 09:22:42,704] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:22:42,713] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:22:42,741] {logging_mixin.py:104} INFO - [2021-02-27 09:22:42,741] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 09:22:42,748] {logging_mixin.py:104} INFO - [2021-02-27 09:22:42,748] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 09:22:42,753] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.051 seconds
+[2021-02-27 09:23:30,858] {scheduler_job.py:182} INFO - Started process (PID=22327) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:23:30,858] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 09:23:30,859] {logging_mixin.py:104} INFO - [2021-02-27 09:23:30,859] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:23:30,865] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:23:30,892] {logging_mixin.py:104} INFO - [2021-02-27 09:23:30,892] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 09:23:30,901] {logging_mixin.py:104} INFO - [2021-02-27 09:23:30,900] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 09:23:30,906] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.049 seconds
+[2021-02-27 09:24:12,314] {scheduler_job.py:182} INFO - Started process (PID=22374) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:24:12,315] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 09:24:12,316] {logging_mixin.py:104} INFO - [2021-02-27 09:24:12,316] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:24:12,326] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:24:12,362] {logging_mixin.py:104} INFO - [2021-02-27 09:24:12,362] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 09:24:12,371] {logging_mixin.py:104} INFO - [2021-02-27 09:24:12,371] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 09:24:12,377] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.063 seconds
+[2021-02-27 09:24:58,398] {scheduler_job.py:182} INFO - Started process (PID=22407) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:24:58,399] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 09:24:58,399] {logging_mixin.py:104} INFO - [2021-02-27 09:24:58,399] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:24:58,406] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:24:58,451] {logging_mixin.py:104} INFO - [2021-02-27 09:24:58,450] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 09:24:58,463] {logging_mixin.py:104} INFO - [2021-02-27 09:24:58,463] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 09:24:58,470] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.072 seconds
+[2021-02-27 09:25:47,534] {scheduler_job.py:182} INFO - Started process (PID=22447) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:25:47,535] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 09:25:47,535] {logging_mixin.py:104} INFO - [2021-02-27 09:25:47,535] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:25:47,541] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:25:47,569] {logging_mixin.py:104} INFO - [2021-02-27 09:25:47,569] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 09:25:47,577] {logging_mixin.py:104} INFO - [2021-02-27 09:25:47,577] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 09:25:47,583] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.049 seconds
+[2021-02-27 09:26:38,420] {scheduler_job.py:182} INFO - Started process (PID=22487) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:26:38,421] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 09:26:38,421] {logging_mixin.py:104} INFO - [2021-02-27 09:26:38,421] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:26:38,428] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:26:38,455] {logging_mixin.py:104} INFO - [2021-02-27 09:26:38,455] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 09:26:38,463] {logging_mixin.py:104} INFO - [2021-02-27 09:26:38,463] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 09:26:38,468] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.048 seconds
+[2021-02-27 09:27:31,023] {scheduler_job.py:182} INFO - Started process (PID=22526) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:27:31,024] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 09:27:31,024] {logging_mixin.py:104} INFO - [2021-02-27 09:27:31,024] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:27:31,032] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:27:31,061] {logging_mixin.py:104} INFO - [2021-02-27 09:27:31,061] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 09:27:31,069] {logging_mixin.py:104} INFO - [2021-02-27 09:27:31,069] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 09:27:31,075] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.052 seconds
+[2021-02-27 09:28:21,687] {scheduler_job.py:182} INFO - Started process (PID=22571) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:28:21,687] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 09:28:21,687] {logging_mixin.py:104} INFO - [2021-02-27 09:28:21,687] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:28:21,693] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:28:21,721] {logging_mixin.py:104} INFO - [2021-02-27 09:28:21,721] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 09:28:21,728] {logging_mixin.py:104} INFO - [2021-02-27 09:28:21,728] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 09:28:21,733] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.047 seconds
+[2021-02-27 09:29:08,336] {scheduler_job.py:182} INFO - Started process (PID=22601) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:29:08,337] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 09:29:08,337] {logging_mixin.py:104} INFO - [2021-02-27 09:29:08,337] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:29:08,344] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:29:08,375] {logging_mixin.py:104} INFO - [2021-02-27 09:29:08,375] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 09:29:08,384] {logging_mixin.py:104} INFO - [2021-02-27 09:29:08,383] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 09:29:08,389] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.053 seconds
+[2021-02-27 09:30:03,885] {scheduler_job.py:182} INFO - Started process (PID=22654) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:30:03,886] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 09:30:03,886] {logging_mixin.py:104} INFO - [2021-02-27 09:30:03,886] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:30:03,892] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:30:03,920] {logging_mixin.py:104} INFO - [2021-02-27 09:30:03,920] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 09:30:03,927] {logging_mixin.py:104} INFO - [2021-02-27 09:30:03,927] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 09:30:03,932] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.048 seconds
+[2021-02-27 09:30:42,842] {scheduler_job.py:182} INFO - Started process (PID=22681) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:30:42,842] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 09:30:42,842] {logging_mixin.py:104} INFO - [2021-02-27 09:30:42,842] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:30:42,851] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:30:42,889] {logging_mixin.py:104} INFO - [2021-02-27 09:30:42,888] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 09:30:42,898] {logging_mixin.py:104} INFO - [2021-02-27 09:30:42,898] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 09:30:42,905] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.064 seconds
+[2021-02-27 09:31:22,790] {scheduler_job.py:182} INFO - Started process (PID=22707) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:31:22,792] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 09:31:22,792] {logging_mixin.py:104} INFO - [2021-02-27 09:31:22,792] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:31:22,800] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:31:22,828] {logging_mixin.py:104} INFO - [2021-02-27 09:31:22,828] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 09:31:22,835] {logging_mixin.py:104} INFO - [2021-02-27 09:31:22,835] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 09:31:22,840] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.050 seconds
+[2021-02-27 09:32:17,926] {scheduler_job.py:182} INFO - Started process (PID=22745) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:32:17,926] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 09:32:17,926] {logging_mixin.py:104} INFO - [2021-02-27 09:32:17,926] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:32:17,932] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:32:17,959] {logging_mixin.py:104} INFO - [2021-02-27 09:32:17,959] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 09:32:17,966] {logging_mixin.py:104} INFO - [2021-02-27 09:32:17,965] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 09:32:17,970] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.045 seconds
+[2021-02-27 09:33:08,366] {scheduler_job.py:182} INFO - Started process (PID=22779) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:33:08,368] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 09:33:08,368] {logging_mixin.py:104} INFO - [2021-02-27 09:33:08,368] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:33:08,375] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:33:08,402] {logging_mixin.py:104} INFO - [2021-02-27 09:33:08,402] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 09:33:08,409] {logging_mixin.py:104} INFO - [2021-02-27 09:33:08,409] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 09:33:08,414] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.048 seconds
+[2021-02-27 09:34:01,242] {scheduler_job.py:182} INFO - Started process (PID=22820) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:34:01,243] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 09:34:01,243] {logging_mixin.py:104} INFO - [2021-02-27 09:34:01,243] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:34:01,249] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:34:01,276] {logging_mixin.py:104} INFO - [2021-02-27 09:34:01,276] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 09:34:01,283] {logging_mixin.py:104} INFO - [2021-02-27 09:34:01,283] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 09:34:01,288] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.046 seconds
+[2021-02-27 09:34:49,427] {scheduler_job.py:182} INFO - Started process (PID=22856) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:34:49,428] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 09:34:49,429] {logging_mixin.py:104} INFO - [2021-02-27 09:34:49,429] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:34:49,436] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:34:49,465] {logging_mixin.py:104} INFO - [2021-02-27 09:34:49,465] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 09:34:49,473] {logging_mixin.py:104} INFO - [2021-02-27 09:34:49,473] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 09:34:49,478] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.052 seconds
+[2021-02-27 09:35:41,394] {scheduler_job.py:182} INFO - Started process (PID=22894) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:35:41,396] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 09:35:41,396] {logging_mixin.py:104} INFO - [2021-02-27 09:35:41,396] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:35:41,405] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:35:41,434] {logging_mixin.py:104} INFO - [2021-02-27 09:35:41,434] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 09:35:41,441] {logging_mixin.py:104} INFO - [2021-02-27 09:35:41,441] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 09:35:41,446] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.053 seconds
+[2021-02-27 09:36:20,107] {scheduler_job.py:182} INFO - Started process (PID=22920) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:36:20,107] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 09:36:20,108] {logging_mixin.py:104} INFO - [2021-02-27 09:36:20,108] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:36:20,115] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:36:20,147] {logging_mixin.py:104} INFO - [2021-02-27 09:36:20,147] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 09:36:20,157] {logging_mixin.py:104} INFO - [2021-02-27 09:36:20,157] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 09:36:20,162] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.056 seconds
+[2021-02-27 09:36:57,456] {scheduler_job.py:182} INFO - Started process (PID=22945) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:36:57,457] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 09:36:57,457] {logging_mixin.py:104} INFO - [2021-02-27 09:36:57,457] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:36:57,465] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:36:57,508] {logging_mixin.py:104} INFO - [2021-02-27 09:36:57,508] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 09:36:57,518] {logging_mixin.py:104} INFO - [2021-02-27 09:36:57,518] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 09:36:57,527] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.072 seconds
+[2021-02-27 09:37:50,970] {scheduler_job.py:182} INFO - Started process (PID=22981) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:37:50,971] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 09:37:50,971] {logging_mixin.py:104} INFO - [2021-02-27 09:37:50,971] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:37:50,977] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:37:51,005] {logging_mixin.py:104} INFO - [2021-02-27 09:37:51,005] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 09:37:51,012] {logging_mixin.py:104} INFO - [2021-02-27 09:37:51,012] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 09:37:51,017] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.047 seconds
+[2021-02-27 09:38:38,778] {scheduler_job.py:182} INFO - Started process (PID=23018) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:38:38,779] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 09:38:38,779] {logging_mixin.py:104} INFO - [2021-02-27 09:38:38,779] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:38:38,785] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:38:38,812] {logging_mixin.py:104} INFO - [2021-02-27 09:38:38,811] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 09:38:38,818] {logging_mixin.py:104} INFO - [2021-02-27 09:38:38,818] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 09:38:38,823] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.045 seconds
+[2021-02-27 09:39:25,349] {scheduler_job.py:182} INFO - Started process (PID=23052) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:39:25,350] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 09:39:25,350] {logging_mixin.py:104} INFO - [2021-02-27 09:39:25,350] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:39:25,356] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:39:25,383] {logging_mixin.py:104} INFO - [2021-02-27 09:39:25,383] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 09:39:25,390] {logging_mixin.py:104} INFO - [2021-02-27 09:39:25,390] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 09:39:25,394] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.046 seconds
+[2021-02-27 09:40:12,303] {scheduler_job.py:182} INFO - Started process (PID=23085) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:40:12,303] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 09:40:12,304] {logging_mixin.py:104} INFO - [2021-02-27 09:40:12,304] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:40:12,310] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:40:12,343] {logging_mixin.py:104} INFO - [2021-02-27 09:40:12,342] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 09:40:12,351] {logging_mixin.py:104} INFO - [2021-02-27 09:40:12,351] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 09:40:12,357] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.055 seconds
+[2021-02-27 09:40:57,814] {scheduler_job.py:182} INFO - Started process (PID=23114) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:40:57,814] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 09:40:57,815] {logging_mixin.py:104} INFO - [2021-02-27 09:40:57,815] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:40:57,821] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:40:57,848] {logging_mixin.py:104} INFO - [2021-02-27 09:40:57,847] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 09:40:57,855] {logging_mixin.py:104} INFO - [2021-02-27 09:40:57,855] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 09:40:57,860] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.047 seconds
+[2021-02-27 09:41:44,240] {scheduler_job.py:182} INFO - Started process (PID=23149) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:41:44,240] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 09:41:44,241] {logging_mixin.py:104} INFO - [2021-02-27 09:41:44,241] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:41:44,246] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:41:44,273] {logging_mixin.py:104} INFO - [2021-02-27 09:41:44,273] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 09:41:44,281] {logging_mixin.py:104} INFO - [2021-02-27 09:41:44,281] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 09:41:44,286] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.046 seconds
+[2021-02-27 09:42:32,098] {scheduler_job.py:182} INFO - Started process (PID=23183) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:42:32,099] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 09:42:32,099] {logging_mixin.py:104} INFO - [2021-02-27 09:42:32,099] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:42:32,105] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:42:32,131] {logging_mixin.py:104} INFO - [2021-02-27 09:42:32,131] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 09:42:32,138] {logging_mixin.py:104} INFO - [2021-02-27 09:42:32,138] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 09:42:32,143] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.045 seconds
+[2021-02-27 09:43:18,867] {scheduler_job.py:182} INFO - Started process (PID=23217) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:43:18,867] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 09:43:18,868] {logging_mixin.py:104} INFO - [2021-02-27 09:43:18,868] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:43:18,874] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:43:18,899] {logging_mixin.py:104} INFO - [2021-02-27 09:43:18,899] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 09:43:18,906] {logging_mixin.py:104} INFO - [2021-02-27 09:43:18,906] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 09:43:18,911] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.044 seconds
+[2021-02-27 09:44:07,605] {scheduler_job.py:182} INFO - Started process (PID=23250) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:44:07,605] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 09:44:07,605] {logging_mixin.py:104} INFO - [2021-02-27 09:44:07,605] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:44:07,612] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:44:07,641] {logging_mixin.py:104} INFO - [2021-02-27 09:44:07,641] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 09:44:07,648] {logging_mixin.py:104} INFO - [2021-02-27 09:44:07,648] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 09:44:07,654] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.050 seconds
+[2021-02-27 09:44:58,444] {scheduler_job.py:182} INFO - Started process (PID=23288) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:44:58,445] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 09:44:58,445] {logging_mixin.py:104} INFO - [2021-02-27 09:44:58,445] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:44:58,451] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:44:58,480] {logging_mixin.py:104} INFO - [2021-02-27 09:44:58,479] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 09:44:58,487] {logging_mixin.py:104} INFO - [2021-02-27 09:44:58,487] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 09:44:58,492] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.048 seconds
+[2021-02-27 09:45:51,337] {scheduler_job.py:182} INFO - Started process (PID=23325) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:45:51,337] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 09:45:51,337] {logging_mixin.py:104} INFO - [2021-02-27 09:45:51,337] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:45:51,343] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:45:51,370] {logging_mixin.py:104} INFO - [2021-02-27 09:45:51,370] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 09:45:51,377] {logging_mixin.py:104} INFO - [2021-02-27 09:45:51,377] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 09:45:51,382] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.046 seconds
+[2021-02-27 09:46:38,753] {scheduler_job.py:182} INFO - Started process (PID=23359) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:46:38,753] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 09:46:38,754] {logging_mixin.py:104} INFO - [2021-02-27 09:46:38,754] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:46:38,760] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:46:38,790] {logging_mixin.py:104} INFO - [2021-02-27 09:46:38,790] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 09:46:38,800] {logging_mixin.py:104} INFO - [2021-02-27 09:46:38,800] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 09:46:38,804] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.052 seconds
+[2021-02-27 09:47:32,355] {scheduler_job.py:182} INFO - Started process (PID=23403) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:47:32,355] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 09:47:32,356] {logging_mixin.py:104} INFO - [2021-02-27 09:47:32,355] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:47:32,362] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:47:32,398] {logging_mixin.py:104} INFO - [2021-02-27 09:47:32,397] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 09:47:32,407] {logging_mixin.py:104} INFO - [2021-02-27 09:47:32,407] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 09:47:32,412] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.058 seconds
+[2021-02-27 09:48:27,418] {scheduler_job.py:182} INFO - Started process (PID=23470) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:48:27,419] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 09:48:27,419] {logging_mixin.py:104} INFO - [2021-02-27 09:48:27,419] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:48:27,428] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:48:27,458] {logging_mixin.py:104} INFO - [2021-02-27 09:48:27,458] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 09:48:27,466] {logging_mixin.py:104} INFO - [2021-02-27 09:48:27,466] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 09:48:27,470] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.053 seconds
+[2021-02-27 09:49:31,840] {scheduler_job.py:182} INFO - Started process (PID=23528) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:49:31,841] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 09:49:31,841] {logging_mixin.py:104} INFO - [2021-02-27 09:49:31,841] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:49:31,849] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 09:49:31,881] {logging_mixin.py:104} INFO - [2021-02-27 09:49:31,881] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 09:49:31,890] {logging_mixin.py:104} INFO - [2021-02-27 09:49:31,890] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 09:49:31,897] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.058 seconds
+[2021-02-27 10:07:15,796] {scheduler_job.py:182} INFO - Started process (PID=24587) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:07:15,797] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 10:07:15,798] {logging_mixin.py:104} INFO - [2021-02-27 10:07:15,797] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:07:15,806] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:07:16,239] {scheduler_job.py:193} ERROR - Got an exception! Propagating...
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 508, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.9/site-packages/psycopg2/__init__.py", line 127, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "postgres" to address: nodename nor servname provided, or not known
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/airflow/jobs/scheduler_job.py", line 184, in _run_file_processor
+    result: Tuple[int, int] = dag_file_processor.process_file(
+  File "/usr/local/lib/python3.9/site-packages/airflow/utils/session.py", line 65, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/airflow/jobs/scheduler_job.py", line 648, in process_file
+    dagbag.sync_to_db()
+  File "/usr/local/lib/python3.9/site-packages/airflow/utils/session.py", line 65, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 552, in sync_to_db
+    for attempt in run_with_db_retries(logger=self.log):
+  File "/usr/local/lib/python3.9/site-packages/tenacity/__init__.py", line 390, in __iter__
+    do = self.iter(retry_state=retry_state)
+  File "/usr/local/lib/python3.9/site-packages/tenacity/__init__.py", line 368, in iter
+    raise retry_exc.reraise()
+  File "/usr/local/lib/python3.9/site-packages/tenacity/__init__.py", line 186, in reraise
+    raise self.last_attempt.result()
+  File "/usr/local/Cellar/python@3.9/3.9.1_6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/concurrent/futures/_base.py", line 433, in result
+    return self.__get_result()
+  File "/usr/local/Cellar/python@3.9/3.9.1_6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 564, in sync_to_db
+    serialize_errors.extend(_serialze_dag_capturing_errors(dag, session))
+  File "/usr/local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 538, in _serialze_dag_capturing_errors
+    SerializedDagModel.write_dag(
+  File "/usr/local/lib/python3.9/site-packages/airflow/utils/session.py", line 62, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/airflow/models/serialized_dag.py", line 117, in write_dag
+    if session.query(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3523, in scalar
+    ret = self.one()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3490, in one
+    ret = self.one_or_none()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3459, in one_or_none
+    ret = list(self)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3535, in __iter__
+    return self._execute_and_instances(context)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3556, in _execute_and_instances
+    conn = self._get_bind_args(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3571, in _get_bind_args
+    return fn(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3550, in _connection_from_session
+    conn = self.session.connection(**kw)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1142, in connection
+    return self._connection_for_bind(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1150, in _connection_for_bind
+    return self.transaction._connection_for_bind(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 433, in _connection_for_bind
+    conn = bind._contextual_connect()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2302, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2339, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1583, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 508, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.9/site-packages/psycopg2/__init__.py", line 127, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "postgres" to address: nodename nor servname provided, or not known
+
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+[2021-02-27 10:08:32,726] {scheduler_job.py:182} INFO - Started process (PID=24655) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:08:32,727] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 10:08:32,727] {logging_mixin.py:104} INFO - [2021-02-27 10:08:32,727] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:08:32,735] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:08:33,431] {scheduler_job.py:193} ERROR - Got an exception! Propagating...
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 508, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.9/site-packages/psycopg2/__init__.py", line 127, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "postgres" to address: nodename nor servname provided, or not known
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/airflow/jobs/scheduler_job.py", line 184, in _run_file_processor
+    result: Tuple[int, int] = dag_file_processor.process_file(
+  File "/usr/local/lib/python3.9/site-packages/airflow/utils/session.py", line 65, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/airflow/jobs/scheduler_job.py", line 648, in process_file
+    dagbag.sync_to_db()
+  File "/usr/local/lib/python3.9/site-packages/airflow/utils/session.py", line 65, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 552, in sync_to_db
+    for attempt in run_with_db_retries(logger=self.log):
+  File "/usr/local/lib/python3.9/site-packages/tenacity/__init__.py", line 390, in __iter__
+    do = self.iter(retry_state=retry_state)
+  File "/usr/local/lib/python3.9/site-packages/tenacity/__init__.py", line 368, in iter
+    raise retry_exc.reraise()
+  File "/usr/local/lib/python3.9/site-packages/tenacity/__init__.py", line 186, in reraise
+    raise self.last_attempt.result()
+  File "/usr/local/Cellar/python@3.9/3.9.1_6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/concurrent/futures/_base.py", line 433, in result
+    return self.__get_result()
+  File "/usr/local/Cellar/python@3.9/3.9.1_6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 564, in sync_to_db
+    serialize_errors.extend(_serialze_dag_capturing_errors(dag, session))
+  File "/usr/local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 538, in _serialze_dag_capturing_errors
+    SerializedDagModel.write_dag(
+  File "/usr/local/lib/python3.9/site-packages/airflow/utils/session.py", line 62, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/airflow/models/serialized_dag.py", line 117, in write_dag
+    if session.query(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3523, in scalar
+    ret = self.one()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3490, in one
+    ret = self.one_or_none()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3459, in one_or_none
+    ret = list(self)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3535, in __iter__
+    return self._execute_and_instances(context)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3556, in _execute_and_instances
+    conn = self._get_bind_args(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3571, in _get_bind_args
+    return fn(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3550, in _connection_from_session
+    conn = self.session.connection(**kw)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1142, in connection
+    return self._connection_for_bind(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1150, in _connection_for_bind
+    return self.transaction._connection_for_bind(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 433, in _connection_for_bind
+    conn = bind._contextual_connect()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2302, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2339, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1583, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 508, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.9/site-packages/psycopg2/__init__.py", line 127, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "postgres" to address: nodename nor servname provided, or not known
+
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+[2021-02-27 10:09:38,032] {scheduler_job.py:182} INFO - Started process (PID=24738) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:09:38,034] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 10:09:38,034] {logging_mixin.py:104} INFO - [2021-02-27 10:09:38,034] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:09:38,042] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:09:38,669] {scheduler_job.py:193} ERROR - Got an exception! Propagating...
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 508, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.9/site-packages/psycopg2/__init__.py", line 127, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: FATAL:  role "karenzhang" does not exist
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/airflow/jobs/scheduler_job.py", line 184, in _run_file_processor
+    result: Tuple[int, int] = dag_file_processor.process_file(
+  File "/usr/local/lib/python3.9/site-packages/airflow/utils/session.py", line 65, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/airflow/jobs/scheduler_job.py", line 648, in process_file
+    dagbag.sync_to_db()
+  File "/usr/local/lib/python3.9/site-packages/airflow/utils/session.py", line 65, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 552, in sync_to_db
+    for attempt in run_with_db_retries(logger=self.log):
+  File "/usr/local/lib/python3.9/site-packages/tenacity/__init__.py", line 390, in __iter__
+    do = self.iter(retry_state=retry_state)
+  File "/usr/local/lib/python3.9/site-packages/tenacity/__init__.py", line 368, in iter
+    raise retry_exc.reraise()
+  File "/usr/local/lib/python3.9/site-packages/tenacity/__init__.py", line 186, in reraise
+    raise self.last_attempt.result()
+  File "/usr/local/Cellar/python@3.9/3.9.1_6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/concurrent/futures/_base.py", line 433, in result
+    return self.__get_result()
+  File "/usr/local/Cellar/python@3.9/3.9.1_6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 564, in sync_to_db
+    serialize_errors.extend(_serialze_dag_capturing_errors(dag, session))
+  File "/usr/local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 538, in _serialze_dag_capturing_errors
+    SerializedDagModel.write_dag(
+  File "/usr/local/lib/python3.9/site-packages/airflow/utils/session.py", line 62, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/airflow/models/serialized_dag.py", line 117, in write_dag
+    if session.query(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3523, in scalar
+    ret = self.one()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3490, in one
+    ret = self.one_or_none()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3459, in one_or_none
+    ret = list(self)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3535, in __iter__
+    return self._execute_and_instances(context)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3556, in _execute_and_instances
+    conn = self._get_bind_args(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3571, in _get_bind_args
+    return fn(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3550, in _connection_from_session
+    conn = self.session.connection(**kw)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1142, in connection
+    return self._connection_for_bind(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1150, in _connection_for_bind
+    return self.transaction._connection_for_bind(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 433, in _connection_for_bind
+    conn = bind._contextual_connect()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2302, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2339, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1583, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 508, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.9/site-packages/psycopg2/__init__.py", line 127, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) FATAL:  role "karenzhang" does not exist
+
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+[2021-02-27 10:10:49,110] {scheduler_job.py:182} INFO - Started process (PID=24856) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:10:49,111] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 10:10:49,112] {logging_mixin.py:104} INFO - [2021-02-27 10:10:49,111] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:10:49,119] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:10:49,675] {scheduler_job.py:193} ERROR - Got an exception! Propagating...
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 508, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.9/site-packages/psycopg2/__init__.py", line 127, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: FATAL:  role "karenzhang" does not exist
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/airflow/jobs/scheduler_job.py", line 184, in _run_file_processor
+    result: Tuple[int, int] = dag_file_processor.process_file(
+  File "/usr/local/lib/python3.9/site-packages/airflow/utils/session.py", line 65, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/airflow/jobs/scheduler_job.py", line 648, in process_file
+    dagbag.sync_to_db()
+  File "/usr/local/lib/python3.9/site-packages/airflow/utils/session.py", line 65, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 552, in sync_to_db
+    for attempt in run_with_db_retries(logger=self.log):
+  File "/usr/local/lib/python3.9/site-packages/tenacity/__init__.py", line 390, in __iter__
+    do = self.iter(retry_state=retry_state)
+  File "/usr/local/lib/python3.9/site-packages/tenacity/__init__.py", line 368, in iter
+    raise retry_exc.reraise()
+  File "/usr/local/lib/python3.9/site-packages/tenacity/__init__.py", line 186, in reraise
+    raise self.last_attempt.result()
+  File "/usr/local/Cellar/python@3.9/3.9.1_6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/concurrent/futures/_base.py", line 433, in result
+    return self.__get_result()
+  File "/usr/local/Cellar/python@3.9/3.9.1_6/Frameworks/Python.framework/Versions/3.9/lib/python3.9/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/usr/local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 564, in sync_to_db
+    serialize_errors.extend(_serialze_dag_capturing_errors(dag, session))
+  File "/usr/local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 538, in _serialze_dag_capturing_errors
+    SerializedDagModel.write_dag(
+  File "/usr/local/lib/python3.9/site-packages/airflow/utils/session.py", line 62, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/airflow/models/serialized_dag.py", line 117, in write_dag
+    if session.query(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3523, in scalar
+    ret = self.one()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3490, in one
+    ret = self.one_or_none()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3459, in one_or_none
+    ret = list(self)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3535, in __iter__
+    return self._execute_and_instances(context)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3556, in _execute_and_instances
+    conn = self._get_bind_args(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3571, in _get_bind_args
+    return fn(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 3550, in _connection_from_session
+    conn = self.session.connection(**kw)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1142, in connection
+    return self._connection_for_bind(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 1150, in _connection_for_bind
+    return self.transaction._connection_for_bind(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 433, in _connection_for_bind
+    conn = bind._contextual_connect()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2302, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2339, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 1583, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 140, in _do_get
+    self._dec_overflow()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/impl.py", line 137, in _do_get
+    return self._create_connection()
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.raise_(
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/pool/base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.9/site-packages/sqlalchemy/engine/default.py", line 508, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.9/site-packages/psycopg2/__init__.py", line 127, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) FATAL:  role "karenzhang" does not exist
+
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+[2021-02-27 10:11:45,614] {scheduler_job.py:182} INFO - Started process (PID=24969) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:11:45,615] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 10:11:45,615] {logging_mixin.py:104} INFO - [2021-02-27 10:11:45,615] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:11:45,622] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:11:45,638] {logging_mixin.py:104} INFO - [2021-02-27 10:11:45,638] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 10:11:45,674] {logging_mixin.py:104} INFO - [2021-02-27 10:11:45,674] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 10:11:45,681] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.069 seconds
+[2021-02-27 10:12:32,205] {scheduler_job.py:182} INFO - Started process (PID=25029) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:12:32,206] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 10:12:32,207] {logging_mixin.py:104} INFO - [2021-02-27 10:12:32,207] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:12:32,216] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:12:32,258] {logging_mixin.py:104} INFO - [2021-02-27 10:12:32,257] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 10:12:32,268] {logging_mixin.py:104} INFO - [2021-02-27 10:12:32,268] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 10:12:32,274] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.070 seconds
+[2021-02-27 10:13:10,312] {scheduler_job.py:182} INFO - Started process (PID=25173) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:13:10,313] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 10:13:10,313] {logging_mixin.py:104} INFO - [2021-02-27 10:13:10,313] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:13:10,320] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:13:10,369] {logging_mixin.py:104} INFO - [2021-02-27 10:13:10,368] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 10:13:10,380] {logging_mixin.py:104} INFO - [2021-02-27 10:13:10,380] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 10:13:10,388] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.077 seconds
+[2021-02-27 10:13:29,385] {scheduler_job.py:182} INFO - Started process (PID=25205) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:13:29,385] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 10:13:29,386] {logging_mixin.py:104} INFO - [2021-02-27 10:13:29,386] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:13:29,393] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:13:29,450] {logging_mixin.py:104} INFO - [2021-02-27 10:13:29,450] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 10:13:29,462] {logging_mixin.py:104} INFO - [2021-02-27 10:13:29,462] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 10:13:29,470] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.086 seconds
+[2021-02-27 10:13:42,009] {scheduler_job.py:182} INFO - Started process (PID=25262) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:13:42,010] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 10:13:42,010] {logging_mixin.py:104} INFO - [2021-02-27 10:13:42,010] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:13:42,017] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:13:42,064] {logging_mixin.py:104} INFO - [2021-02-27 10:13:42,063] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 10:13:42,074] {logging_mixin.py:104} INFO - [2021-02-27 10:13:42,074] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 10:13:42,080] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.072 seconds
+[2021-02-27 10:14:13,616] {scheduler_job.py:182} INFO - Started process (PID=25356) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:14:13,617] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 10:14:13,617] {logging_mixin.py:104} INFO - [2021-02-27 10:14:13,617] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:14:13,624] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:14:13,668] {logging_mixin.py:104} INFO - [2021-02-27 10:14:13,668] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 10:14:13,680] {logging_mixin.py:104} INFO - [2021-02-27 10:14:13,679] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 10:14:13,686] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.071 seconds
+[2021-02-27 10:14:18,616] {scheduler_job.py:182} INFO - Started process (PID=25368) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:14:18,616] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 10:14:18,617] {logging_mixin.py:104} INFO - [2021-02-27 10:14:18,617] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:14:18,623] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:14:18,672] {logging_mixin.py:104} INFO - [2021-02-27 10:14:18,672] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 10:14:18,683] {logging_mixin.py:104} INFO - [2021-02-27 10:14:18,683] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 10:14:18,690] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.075 seconds
+[2021-02-27 10:14:45,038] {scheduler_job.py:182} INFO - Started process (PID=25442) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:14:45,038] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 10:14:45,039] {logging_mixin.py:104} INFO - [2021-02-27 10:14:45,039] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:14:45,046] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:14:45,093] {logging_mixin.py:104} INFO - [2021-02-27 10:14:45,093] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 10:14:45,104] {logging_mixin.py:104} INFO - [2021-02-27 10:14:45,104] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 10:14:45,112] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.075 seconds
+[2021-02-27 10:15:16,016] {scheduler_job.py:182} INFO - Started process (PID=25528) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:15:16,018] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 10:15:16,018] {logging_mixin.py:104} INFO - [2021-02-27 10:15:16,018] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:15:16,027] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:15:16,075] {logging_mixin.py:104} INFO - [2021-02-27 10:15:16,075] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 10:15:16,086] {logging_mixin.py:104} INFO - [2021-02-27 10:15:16,086] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 10:15:16,093] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.078 seconds
+[2021-02-27 10:15:18,263] {scheduler_job.py:182} INFO - Started process (PID=25536) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:15:18,263] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 10:15:18,264] {logging_mixin.py:104} INFO - [2021-02-27 10:15:18,264] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:15:18,271] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:15:18,319] {logging_mixin.py:104} INFO - [2021-02-27 10:15:18,318] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 10:15:18,330] {logging_mixin.py:104} INFO - [2021-02-27 10:15:18,329] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 10:15:18,336] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.075 seconds
+[2021-02-27 10:15:48,143] {scheduler_job.py:182} INFO - Started process (PID=25623) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:15:48,144] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 10:15:48,144] {logging_mixin.py:104} INFO - [2021-02-27 10:15:48,144] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:15:48,152] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:15:48,199] {logging_mixin.py:104} INFO - [2021-02-27 10:15:48,199] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 10:15:48,211] {logging_mixin.py:104} INFO - [2021-02-27 10:15:48,211] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 10:15:48,219] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.077 seconds
+[2021-02-27 10:16:01,857] {scheduler_job.py:182} INFO - Started process (PID=25644) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:16:01,857] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 10:16:01,857] {logging_mixin.py:104} INFO - [2021-02-27 10:16:01,857] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:16:01,864] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:16:01,910] {logging_mixin.py:104} INFO - [2021-02-27 10:16:01,910] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 10:16:01,921] {logging_mixin.py:104} INFO - [2021-02-27 10:16:01,921] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 10:16:01,928] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.072 seconds
+[2021-02-27 10:16:19,660] {scheduler_job.py:182} INFO - Started process (PID=25711) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:16:19,661] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 10:16:19,661] {logging_mixin.py:104} INFO - [2021-02-27 10:16:19,661] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:16:19,671] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:16:19,735] {logging_mixin.py:104} INFO - [2021-02-27 10:16:19,735] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 10:16:19,747] {logging_mixin.py:104} INFO - [2021-02-27 10:16:19,747] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 10:16:19,755] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.097 seconds
+[2021-02-27 10:16:45,862] {scheduler_job.py:182} INFO - Started process (PID=25775) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:16:45,863] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 10:16:45,864] {logging_mixin.py:104} INFO - [2021-02-27 10:16:45,863] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:16:45,872] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:16:45,923] {logging_mixin.py:104} INFO - [2021-02-27 10:16:45,922] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 10:16:45,933] {logging_mixin.py:104} INFO - [2021-02-27 10:16:45,933] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 10:16:45,941] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.080 seconds
+[2021-02-27 10:16:51,081] {scheduler_job.py:182} INFO - Started process (PID=25800) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:16:51,081] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 10:16:51,082] {logging_mixin.py:104} INFO - [2021-02-27 10:16:51,082] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:16:51,088] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:16:51,134] {logging_mixin.py:104} INFO - [2021-02-27 10:16:51,134] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 10:16:51,145] {logging_mixin.py:104} INFO - [2021-02-27 10:16:51,145] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 10:16:51,152] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.072 seconds
+[2021-02-27 10:17:22,082] {scheduler_job.py:182} INFO - Started process (PID=25898) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:17:22,083] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 10:17:22,083] {logging_mixin.py:104} INFO - [2021-02-27 10:17:22,083] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:17:22,090] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:17:22,134] {logging_mixin.py:104} INFO - [2021-02-27 10:17:22,133] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 10:17:22,145] {logging_mixin.py:104} INFO - [2021-02-27 10:17:22,144] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 10:17:22,151] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.070 seconds
+[2021-02-27 10:17:29,223] {scheduler_job.py:182} INFO - Started process (PID=25913) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:17:29,223] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 10:17:29,223] {logging_mixin.py:104} INFO - [2021-02-27 10:17:29,223] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:17:29,229] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:17:29,272] {logging_mixin.py:104} INFO - [2021-02-27 10:17:29,271] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 10:17:29,281] {logging_mixin.py:104} INFO - [2021-02-27 10:17:29,281] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 10:17:29,288] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.066 seconds
+[2021-02-27 10:17:53,811] {scheduler_job.py:182} INFO - Started process (PID=25985) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:17:53,811] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 10:17:53,812] {logging_mixin.py:104} INFO - [2021-02-27 10:17:53,811] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:17:53,820] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:17:53,864] {logging_mixin.py:104} INFO - [2021-02-27 10:17:53,864] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 10:17:53,875] {logging_mixin.py:104} INFO - [2021-02-27 10:17:53,875] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 10:17:53,883] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.073 seconds
+[2021-02-27 10:18:12,162] {scheduler_job.py:182} INFO - Started process (PID=26022) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:18:12,162] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 10:18:12,163] {logging_mixin.py:104} INFO - [2021-02-27 10:18:12,163] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:18:12,170] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:18:12,215] {logging_mixin.py:104} INFO - [2021-02-27 10:18:12,215] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 10:18:12,227] {logging_mixin.py:104} INFO - [2021-02-27 10:18:12,226] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 10:18:12,234] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.073 seconds
+[2021-02-27 10:18:25,178] {scheduler_job.py:182} INFO - Started process (PID=26084) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:18:25,179] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 10:18:25,179] {logging_mixin.py:104} INFO - [2021-02-27 10:18:25,179] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:18:25,186] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:18:25,232] {logging_mixin.py:104} INFO - [2021-02-27 10:18:25,232] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 10:18:25,244] {logging_mixin.py:104} INFO - [2021-02-27 10:18:25,244] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 10:18:25,251] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.073 seconds
+[2021-02-27 10:18:56,390] {scheduler_job.py:182} INFO - Started process (PID=26242) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:18:56,391] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 10:18:56,392] {logging_mixin.py:104} INFO - [2021-02-27 10:18:56,392] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:18:56,406] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:18:56,503] {logging_mixin.py:104} INFO - [2021-02-27 10:18:56,503] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 10:18:56,530] {logging_mixin.py:104} INFO - [2021-02-27 10:18:56,530] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 10:18:56,546] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.156 seconds
+[2021-02-27 10:18:56,929] {scheduler_job.py:182} INFO - Started process (PID=26252) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:18:56,930] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 10:18:56,930] {logging_mixin.py:104} INFO - [2021-02-27 10:18:56,930] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:18:56,938] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:18:56,991] {logging_mixin.py:104} INFO - [2021-02-27 10:18:56,991] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 10:18:57,004] {logging_mixin.py:104} INFO - [2021-02-27 10:18:57,004] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 10:18:57,011] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.083 seconds
+[2021-02-27 10:19:28,593] {scheduler_job.py:182} INFO - Started process (PID=26485) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:19:28,594] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 10:19:28,595] {logging_mixin.py:104} INFO - [2021-02-27 10:19:28,595] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:19:28,603] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:19:28,648] {logging_mixin.py:104} INFO - [2021-02-27 10:19:28,648] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 10:19:28,659] {logging_mixin.py:104} INFO - [2021-02-27 10:19:28,659] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 10:19:28,665] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.072 seconds
+[2021-02-27 10:19:39,334] {scheduler_job.py:182} INFO - Started process (PID=26505) to work on /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:19:39,335] {scheduler_job.py:629} INFO - Processing file /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py for tasks to queue
+[2021-02-27 10:19:39,335] {logging_mixin.py:104} INFO - [2021-02-27 10:19:39,335] {dagbag.py:448} INFO - Filling up the DagBag from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:19:39,345] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['tutorial_etl_dag']) retrieved from /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py
+[2021-02-27 10:19:39,408] {logging_mixin.py:104} INFO - [2021-02-27 10:19:39,408] {dag.py:1818} INFO - Sync 1 DAGs
+[2021-02-27 10:19:39,423] {logging_mixin.py:104} INFO - [2021-02-27 10:19:39,423] {dag.py:2273} INFO - Setting next_dagrun for tutorial_etl_dag to None
+[2021-02-27 10:19:39,432] {scheduler_job.py:190} INFO - Processing /usr/local/lib/python3.9/site-packages/airflow/example_dags/tutorial_etl_dag.py took 0.098 seconds
