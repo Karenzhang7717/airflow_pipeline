@@ -53,3 +53,18 @@ restart webserver
 ```
 docker restart airflow-tendie_airflow-webserver_1
 ```
+
+
+# connect to the vm instance:
+
+```
+stan@stan-ryzenrig:~/Downloads$ chmod 600 LightsailDefaultKey-us-west-2.pem 
+stan@stan-ryzenrig:~/Downloads$ ssh -i LightsailDefaultKey-us-west-2.pem ubuntu@34.210.68.49
+```
+
+# update your deployment
+after ssh into the vm
+```
+ubuntu@ip-172-26-13-211:~$ cd airflow_pipeline/
+ubuntu@ip-172-26-13-211:~/airflow_pipeline$ git pull
+```
