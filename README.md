@@ -2,9 +2,11 @@
 
 http://airflow.apache.org/docs/apache-airflow/stable/start/docker.html
 
-```
-curl -LfO 'https://airflow.apache.org/docs/apache-airflow/2.0.1/docker-compose.yaml'
-```
+~~`curl -LfO 'https://airflow.apache.org/docs/apache-airflow/2.0.1/docker-compose.yaml'`~~
+
+Don't run above script if using custom build image
+
+clone this repo, and then **cd into the directory where this repo is located**
 
 ##### Init
 
@@ -16,16 +18,16 @@ echo -e "AIRFLOW_UID=$(id -u)\nAIRFLOW_GID=0" > .env
 get images
 
 ```
-mkdir ./dags ./logs ./plugins
-echo -e "AIRFLOW_UID=$(id -u)\nAIRFLOW_GID=0" > .env
+docker-compose up airflow-init
 ```
 
 compose up
 
 ```
 docker-compose up --build -d
-docker-compose up -d
 ```
+
+~~`docker-compose up -d`~~ (if custom building)
 
 when done & ready to purge
 
