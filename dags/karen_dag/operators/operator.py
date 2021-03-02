@@ -9,6 +9,8 @@ import os
 import csv
 import re
 from itertools import islice
+import psycopg2
+from psycopg2 import Error
 
 def read_from_psql(ds, *args, **kwargs): # dag function
     print(ds)
@@ -17,6 +19,24 @@ def read_from_psql(ds, *args, **kwargs): # dag function
     #output_file()
     print('success')
     sources = 0
+
+
+    connection = psycopg2.connect(user="karen",
+                                  password="karen",
+                                  host="airflow-karen_postgres_karen_interview_1",
+                                  port="5432",
+                                  database="karen")
+    cursor = connection.cursor()
+
+    print("PostgreSQL server information")
+    print(connection.get_dsn_parameters(), "\n")
+
+    hook = PostgresHook(postgres_conn_id='karen',
+                        postgres_default='karen',
+                        autocommit=True,
+                        database="postgres_db")
+    print(hook)
+    hook.run('select * from ball_milling;')
     # request='SELECT * FROM ball_milling'
     # connection=pg_hook.get_conn()
     # cursor=connection.cursor()
