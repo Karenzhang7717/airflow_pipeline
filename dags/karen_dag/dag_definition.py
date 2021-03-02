@@ -20,8 +20,9 @@ def create_dag(dag_id,
         karen = PythonOperator(
             task_id='karens_job_interview',
             python_callable=read_from_psql,
+            # postgre_conn_id='karen',
+            # schema='karen',
             dag=dag
-
         )
 
         karen_taks2 = PythonOperator(

@@ -2,7 +2,13 @@ import logging
 import pandas as pd
 from airflow.example_dags.example_python_operator import print_context
 from airflow.operators.python import PythonOperator
-
+from airflow.utils.decorators import apply_defaults
+from airflow.hooks.postgres_hook import PostgresHook
+from datetime import datetime, timedelta
+import os
+import csv
+import re
+from itertools import islice
 
 def read_from_psql(ds, *args, **kwargs): # dag function
     print(ds)
@@ -10,14 +16,14 @@ def read_from_psql(ds, *args, **kwargs): # dag function
     #todo: write your functions in here
     #output_file()
     print('success')
-    request='SELECT * FROM ball_milling'
-    pg_hook=PostgresHook(postgre_conn_id='sql_connection',schema='public')
-    connection=pg_hook.get_conn()
-    cursor=connection.cursor()
-    cursor.execute(request)
-    sources=cursor.fetchall()
-    for source in sources:
-        print('sources: {0} - activated: {1}'.format(source[0],source[1]))
+    sources = 0
+    # request='SELECT * FROM ball_milling'
+    # connection=pg_hook.get_conn()
+    # cursor=connection.cursor()
+    # cursor.execute(request)
+    # sources=cursor.fetchall()
+    # for source in sources:
+    #     print('sources: {0} - activated: {1}'.format(source[0],source[1]))
     return sources
 
 
