@@ -91,3 +91,13 @@ docker exec -it airflow-karen_postgres_karen_interview_1
 echo "host all  all    0.0.0.0/0  md5" >> /var/lib/postgresql/data/pg_hba.conf
 echo "host all  all    ::/0  md5" >> /var/lib/postgresql/data/pg_hba.conf
 ```
+
+
+
+
+
+# connection
+
+![image-20210301214247423](README.assets/image-20210301214247423.png)
+
+set connection like this
