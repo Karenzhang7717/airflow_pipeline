@@ -55,6 +55,13 @@ when done & ready to purge
 docker-compose down --volumes
 docker-compose down --volumes --rmi all
 ```
+```
+docker kill $(docker ps -q) # stop all containers:
+docker rm $(docker ps -a -q) # remove all containers
+docker rmi -f $(docker images -a -q)
+```
+
+
 
 [ssh into airflow pod](https://phase2.github.io/devtools/common-tasks/ssh-into-a-container/)
 

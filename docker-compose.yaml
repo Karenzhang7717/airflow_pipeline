@@ -63,6 +63,23 @@ x-airflow-common:
       condition: service_healthy
 
 services:
+
+  postgres_karen_interview:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: karen
+      POSTGRES_PASSWORD: karen
+      POSTGRES_DB: karen
+    ports:
+      - "5433:5432"
+    volumes:
+      - karen-postgres-db-volume:/var/lib/postgresql/data
+    healthcheck:
+      test: [ "CMD", "pg_isready", "-U", "karen" ]
+      interval: 5s
+      retries: 5
+    restart: always
+
   postgres:
     image: postgres:13
     environment:
@@ -76,6 +93,8 @@ services:
       interval: 5s
       retries: 5
     restart: always
+
+
 
   redis:
     image: redis:latest
@@ -139,3 +158,4 @@ services:
 
 volumes:
   postgres-db-volume:
+  karen-postgres-db-volume:
