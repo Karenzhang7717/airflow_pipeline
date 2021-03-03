@@ -1,16 +1,34 @@
-import logging
-import pandas as pd
+
+
 from airflow.example_dags.example_python_operator import print_context
 from airflow.operators.python import PythonOperator
-from airflow.utils.decorators import apply_defaults
 from airflow.hooks.postgres_hook import PostgresHook
+from airflow.utils.decorators import apply_defaults
+import psycopg2, psycopg2.extras
+
 from datetime import datetime, timedelta
 import os
 import csv
 import re
 from itertools import islice
-import psycopg2
-from psycopg2 import Error
+
+# def finnhub_test(ds, *args, **kwargs):
+#     print(ds)
+#     print(kwargs)
+#     test_val=kwargs['stock_symbol']
+#     print("testing"+test_val)
+#     """
+#     The following script is from the notebook
+#     """
+#     finnhub_client = finnhub.Client(api_key="c0n2vh748v6tkq13rij0")
+#     # need to get a free key from here: https://finnhub.io/
+#     # Stock candles
+#     res = finnhub_client.stock_candles('AAPL', 'D', 1590988249, 1591852249)
+#     helper_test_print(res)
+#     import pandas as pd
+#     print(finnhub_client.symbol_lookup('apple'))
+#     return ("success")
+
 
 def read_from_psql(ds, *args, **kwargs): # dag function
     print(ds)
@@ -18,47 +36,108 @@ def read_from_psql(ds, *args, **kwargs): # dag function
     #todo: write your functions in here
     #output_file()
     print('success')
-    sources = 0
-
-
-    connection = psycopg2.connect(user="karen",
-                                  password="karen",
-                                  host="airflow-karen_postgres_karen_interview_1",
-                                  port="5432",
-                                  database="karen")
-    cursor = connection.cursor()
-
-    print("PostgreSQL server information")
-    print(connection.get_dsn_parameters(), "\n")
-
+    connection = psycopg2.connect(user='karen',
+                                password='karen',
+                                host='host.docker.internal',
+                                port='5432',
+                                database='postgres')
+    request='SELECT * FROM ball_milling'
+    pg_hook=PostgresHook(postgre_conn_id='karen',schema='public')
+    # connection=pg_hook.get_conn()
+    cursor=connection.cursor()
+    cursor.execute(request)
+    sources=cursor.fetchall()
+    for source in sources:
+        print('sources: {0} - activated: {1}'.format(source[0],source[1]))
+    return sources
+   # sources = 0
+   
+    # print(connection)
+    # cursor = connection.cursor()
+    # print("PostgreSQL server information")
+    # print(connection.get_dsn_parameters(), "\n")
     hook = PostgresHook(postgres_conn_id='karen',
                         postgres_default='karen',
                         autocommit=True,
-                        database="postgres_db")
-    print(hook)
-    hook.run('select * from ball_milling;')
-    # request='SELECT * FROM ball_milling'
-    # connection=pg_hook.get_conn()
-    # cursor=connection.cursor()
-    # cursor.execute(request)
-    # sources=cursor.fetchall()
-    # for source in sources:
-    #     print('sources: {0} - activated: {1}'.format(source[0],source[1]))
-    return sources
+                        database="karen",
+                        schema='public')
+    # print(hook)
+    # hook.run('select * from ball_milling;')
+    # print('hook runs successfully')
+   # request1='grant usage on schema public to karen'
+    request='SELECT * FROM ball_milling'
+    connection=hook.get_conn()
+    print(connection)
+    cursor=connection.cursor()
+    #cursor.execute(request1)
+    cursor.execute(request)
+    data_ball_milling=cursor.fetchall()
+   # file_path="D:\\Karen\\test\\"
+    file_path="C:\\"
+    temp_path = file_path + '_dump_.csv'
+    #temp_path = 'D:\\Karen\\test\\testbook.csv'
+    tmp_path = file_path + 'dump.csv'
+    with open(tmp_path, 'w') as fp:
+        print('open success')
+        a = csv.writer(fp, quoting = csv.QUOTE_ALL)
+        print('writer success')
+        print(cursor.description)
+        print(i[1] for i in cursor.description)
+        a.writerow(i[0] for i in cursor.description)
+        a.writerow(data_ball_milling)
+        print('finished writing rows')
+    # full_path = temp_path + '.gz'
+    # with open(temp_path, 'rb') as f:
+    #     data = f.read()
+    # f.close()
+    #hook.bulk_dump(request,tmp_path)
 
 
-def karens_custom_dag(ds, *args, **kwargs): # dag function
-    print(ds)
-    print(kwargs)
-    #todo: write your functions in here
-
-
-
-
+    for source in data_ball_milling:
+        print('sources: {0} - activated: {1}'.format(source[0],source[1]))
+    #return sources
 
     #todo:get data to be saved to csv.
     # data=kwargs['dag_run'].conf['csv_file_path']
-    return ("success")
+ #   return ("success")
+
+# def output_file():
+#     dirpath = 'D:/Karen/airflow_pipeline/dae-challenge/x-lab-data'
+#     output = 'D:/Karen/airflow_pipeline/dae-challenge/Book3.csv'
+    
+#     outfile = open(output, 'w',newline='')
+#     csvout = csv.writer(outfile)
+#     csvout.writerow(['data source','material_uid','Measurement','Probe Resistance (ohm)','Gas Flow Rate (L/min)','Gas Type','Probe Material','Current (mA)','Field Strength (T)','Sample Position','Magnet Reversal'])
+#     files = os.listdir(dirpath)
+#     files_hall=files[:35]
+#     regex = re.compile(r'[\n\r\t]')
+
+#     for filename in files_hall:
+#         with open(dirpath + '/' + filename) as afile:
+#             row=[] # list of values we will be constructing
+           
+#             for line in islice(afile, 2, None):#extract from the third row
+#                 line_input = line.strip('" \n') # I will be explaining this later
+#                 words=regex.sub(" ",line_input).split(' ')[-1]
+#                 #row[0]='x-labs data'
+#                 row.append(words) # adds the retrieved value to our row
+#             row.insert(0,'X-LABS DATA')
+#         csvout.writerow(row)
+    
+#     csvout.writerow(['data source','material_uid','Measurement','Pb concentration','Sn concentration','O Concentration','Gas Flow Rate (L/min)','Gas Type','Plasma Temperature (celsius)','Detector Temperature (celsius)','Field Strength (T)','Plasma Observation','Radio Frequency (MHz)'])
+#     files_icp=files[35:]
+#     for filename in files_icp:
+#         with open(dirpath + '/' + filename) as afile:
+#             row=[] # list of values we will be constructing
+#             for line in islice(afile, 2, None):#extract from the third row
+#                 line_input = line.strip('" \n') # I will be explaining this later
+#                 words=regex.sub(" ",line_input).split(' ')[-1]
+#                 row.append(words) # adds the retrieved value to our row
+#             row.insert(0,'X-LABS DATA')
+#         csvout.writerow(row)
+    
+#     outfile.close()
+
 
 
 def helper_test_print(res): #generic function
@@ -67,4 +146,4 @@ def helper_test_print(res): #generic function
 
 
 if __name__ == '__main__':
-    karens_custom_dag()
+    read_from_psql(1)
