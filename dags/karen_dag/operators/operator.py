@@ -23,59 +23,57 @@ def read_from_psql(ds, *args, **kwargs): # dag function
                                 port='5432',
                                 database='postgres')
     request='SELECT * FROM ball_milling'
-    pg_hook=PostgresHook(postgre_conn_id='karen',schema='public')
+    #pg_hook=PostgresHook(postgre_conn_id='karen',schema='public')
     cursor=connection.cursor()
     cursor.execute(request)
-    sources=cursor.fetchall()
-    for source in sources:
-        print('sources: {0} - activated: {1}'.format(source[0],source[1]))
-    # return sources
-
-    # hook = PostgresHook(postgres_conn_id='karen',
-    #                     postgres_default='karen',
-    #                     autocommit=True,
-    #                     database="karen",
-    #                     schema='public')
-    
-    # request='SELECT * FROM ball_milling'
-    # connection=hook.get_conn()
-    print(connection)
-    cursor=connection.cursor()
-    cursor.execute(request)
+    # sources=cursor.fetchall()
+    # for source in sources:
+    #     print('sources: {0} - activated: {1}'.format(source[0],source[1]))
+    # print(connection)
+    # # cursor=connection.cursor()
+    # # cursor.execute(request)
     data_ball_milling=cursor.fetchall()
-   # file_path="D:\\Karen\\test\\"
     file_path="/opt/airflow/logs/"
     print(file_path)
-    # temp_path = file_path + '_dump_.csv'
-    #temp_path = 'D:\\Karen\\test\\testbook.csv'
+  
     tmp_path = file_path + 'dump.csv'
     with open(tmp_path, 'w', newline='') as fp:
         print(tmp_path)
         print('open success')
-        a = csv.writer(fp, quoting = csv.QUOTE_ALL)
-        a.writerow('testing')
-        logging.info('testing+++++++++++++')
-        # print('writer success')
-        # print(cursor.description)
-        # print(i[1] for i in cursor.description)
+        a = csv.writer(fp, quoting = csv.QUOTE_MINIMAL, delimiter = ',')
+        #headers=[]
+        #headers.append(i[0] for i in cursor.description)
         a.writerow(i[0] for i in cursor.description)
-        a.writerow(data_ball_milling)
+        #headers.insert(0,'data source')
+        #a.writerow(headers)
+        for data in data_ball_milling:
+            a.writerow(data)
+
         logging.info('finished writing rows')
-    # full_path = temp_path + '.gz'
-    # with open(temp_path, 'rb') as f:
-    #     data = f.read()
-    # f.close()
-    #hook.bulk_dump(request,tmp_path)
+    
+    request2='SELECT * FROM hot_press'
+    cursor.execute(request2)
+    data_hot_press=cursor.fetchall()
+    with open(tmp_path, 'a', newline='') as fp:
+        a = csv.writer(fp, quoting = csv.QUOTE_MINIMAL, delimiter = ',')
+        a.writerow(i[0] for i in cursor.description)
+        for data in data_hot_press:
+            a.writerow(data)
+
+    request3='SELECT * FROM material_procurement'
+    cursor.execute(request3)
+    data_material_proc=cursor.fetchall()
+    with open(tmp_path, 'a', newline='') as fp:
+        a = csv.writer(fp, quoting = csv.QUOTE_MINIMAL, delimiter = ',')
+        a.writerow(i[0] for i in cursor.description)
+        for data in data_material_proc:
+            a.writerow(data)
 
 
-    for source in data_ball_milling:
-        print('sources: {0} - activated: {1}'.format(source[0],source[1]))
-        print(os.getcwd()) 
-    #return sources
 
-    #todo:get data to be saved to csv.
-    # data=kwargs['dag_run'].conf['csv_file_path']
- #   return ("success")
+
+    
+ 
 
 # def output_file():
 #     dirpath = 'D:/Karen/airflow_pipeline/dae-challenge/x-lab-data'
