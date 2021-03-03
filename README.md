@@ -47,7 +47,7 @@ Go to the Docker Desktop UI and launch ![image-20210301214247423](README.assets/
 
 - Direct to the location that PostgreSQL is installed, find pg_hba file (C:\Program Files\PostgreSQL\12\data\pg_hba ) in my case, and change METHOD to trust for all connections like below:
 
-  ![image-20210303122513814](README.assets\image-20210303122513814.png)
+  ![image-20210303122513814](README.assets/image-20210303122513814.png)
 
 - Grant access for user karen:
 
@@ -63,10 +63,10 @@ Go to the Docker Desktop UI and launch ![image-20210301214247423](README.assets/
 
 - Trigger the dag:
 
-  ![image-20210303124004097](README.assets\image-20210303124004097.png)
+  ![image-20210303124004097](README.assets/image-20210303124004097.png)
 
 - The graph view should look like this:
 
-  ![image-20210303124106362](README.assets\image-20210303124106362.png)
+  ![image-20210303124106362](README.assets/image-20210303124106362.png)
 
 - Go to the location that the repo is stored, the generated master_db.csv is located in the logs folder (e.g. D:\Karen\airflow_pipeline\logs)
