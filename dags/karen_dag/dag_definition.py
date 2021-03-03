@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 from airflow.operators.dummy import DummyOperator
 import json  # https://bigdata-etl.com/apache-airflow-create-dynamic-dag/
 from airflow.operators.python import PythonOperator
-from karen_dag.operators.operator import read_from_psql
+from karen_dag.operators.operator import read_from_psql,output_file
 
 
 def create_dag(dag_id,
@@ -27,7 +27,7 @@ def create_dag(dag_id,
 
         karen_taks2 = PythonOperator(
             task_id='karens_job_interview2',
-            python_callable=read_from_psql,
+            python_callable=output_file,
             dag=dag
         )
 

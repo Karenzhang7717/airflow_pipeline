@@ -69,50 +69,41 @@ def read_from_psql(ds, *args, **kwargs): # dag function
         for data in data_material_proc:
             a.writerow(data)
 
+def output_file(ds, *args, **kwargs):
+    dirpath = '/opt/airflow/logs/x-lab-data'
+    output="/opt/airflow/logs/dump.csv"
+    outfile = open(output, 'a',newline='')
+    csvout = csv.writer(outfile)
+    csvout.writerow(['data source','material_uid','Measurement','Probe Resistance (ohm)','Gas Flow Rate (L/min)','Gas Type','Probe Material','Current (mA)','Field Strength (T)','Sample Position','Magnet Reversal'])
+    files = os.listdir(dirpath)
+  #  files_hall=files[:35]
+    regex = re.compile(r'[\n\r\t]')
 
-
-
+    for filename in files:
+        with open(dirpath + '/' + filename) as afile:
+            row=[] # list of values we will be constructing       
+            for line in islice(afile, 2, None):#extract from the third row
+                line_input = line.strip('" \n') # I will be explaining this later
+                words=regex.sub(" ",line_input).split(' ')[-1]
+                row.append(words) # adds the retrieved value to our row
+            row.insert(0,'X-LABS DATA')
+           # print(row[2])
+        if row[2]=='Hall':
+            csvout.writerow(row)
     
- 
-
-# def output_file():
-#     dirpath = 'D:/Karen/airflow_pipeline/dae-challenge/x-lab-data'
-#     output = 'D:/Karen/airflow_pipeline/dae-challenge/Book3.csv'
+    csvout.writerow(['data source','material_uid','Measurement','Pb concentration','Sn concentration','O Concentration','Gas Flow Rate (L/min)','Gas Type','Plasma Temperature (celsius)','Detector Temperature (celsius)','Field Strength (T)','Plasma Observation','Radio Frequency (MHz)'])
+    for filename in files:
+        with open(dirpath + '/' + filename) as afile:
+            row=[] # list of values we will be constructing
+            for line in islice(afile, 2, None):#extract from the third row
+                line_input = line.strip('" \n') # I will be explaining this later
+                words=regex.sub(" ",line_input).split(' ')[-1]
+                row.append(words) # adds the retrieved value to our row
+            row.insert(0,'X-LABS DATA')
+        if row[2]=='ICP':
+            csvout.writerow(row)
     
-#     outfile = open(output, 'w',newline='')
-#     csvout = csv.writer(outfile)
-#     csvout.writerow(['data source','material_uid','Measurement','Probe Resistance (ohm)','Gas Flow Rate (L/min)','Gas Type','Probe Material','Current (mA)','Field Strength (T)','Sample Position','Magnet Reversal'])
-#     files = os.listdir(dirpath)
-#     files_hall=files[:35]
-#     regex = re.compile(r'[\n\r\t]')
-
-#     for filename in files_hall:
-#         with open(dirpath + '/' + filename) as afile:
-#             row=[] # list of values we will be constructing
-           
-#             for line in islice(afile, 2, None):#extract from the third row
-#                 line_input = line.strip('" \n') # I will be explaining this later
-#                 words=regex.sub(" ",line_input).split(' ')[-1]
-#                 #row[0]='x-labs data'
-#                 row.append(words) # adds the retrieved value to our row
-#             row.insert(0,'X-LABS DATA')
-#         csvout.writerow(row)
-    
-#     csvout.writerow(['data source','material_uid','Measurement','Pb concentration','Sn concentration','O Concentration','Gas Flow Rate (L/min)','Gas Type','Plasma Temperature (celsius)','Detector Temperature (celsius)','Field Strength (T)','Plasma Observation','Radio Frequency (MHz)'])
-#     files_icp=files[35:]
-#     for filename in files_icp:
-#         with open(dirpath + '/' + filename) as afile:
-#             row=[] # list of values we will be constructing
-#             for line in islice(afile, 2, None):#extract from the third row
-#                 line_input = line.strip('" \n') # I will be explaining this later
-#                 words=regex.sub(" ",line_input).split(' ')[-1]
-#                 row.append(words) # adds the retrieved value to our row
-#             row.insert(0,'X-LABS DATA')
-#         csvout.writerow(row)
-    
-#     outfile.close()
-
-
+    outfile.close()
 
 def helper_test_print(res): #generic function
     print("testing the feature:")
