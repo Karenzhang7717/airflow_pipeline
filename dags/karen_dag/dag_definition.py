@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 from airflow.operators.dummy import DummyOperator
 import json  # https://bigdata-etl.com/apache-airflow-create-dynamic-dag/
 from airflow.operators.python import PythonOperator
-from karen_dag.operators.operator import read_from_psql,output_file
+from karen_dag.operators.operator import read_from_psql,read_from_txt
 
 
 def create_dag(dag_id,
@@ -17,22 +17,20 @@ def create_dag(dag_id,
             task_id='start_tasks',
             dag=dag
         )
-        karen = PythonOperator(
-            task_id='karens_job_interview',
+        Procurement_and_x_processing = PythonOperator(
+            task_id='data_from_psql',
             python_callable=read_from_psql,
-            # postgre_conn_id='karen',
-            # schema='karen',
             dag=dag
         )
 
-        karen_taks2 = PythonOperator(
-            task_id='karens_job_interview2',
-            python_callable=output_file,
+        x_material = PythonOperator(
+            task_id='data_from_txt',
+            python_callable=read_from_txt,
             dag=dag
         )
 
 
-        init >> karen >> karen_taks2
+        init >> Procurement_and_x_processing >> x_material
 
         return dag
 
@@ -46,10 +44,10 @@ def generate_dag_from_config():
         dag_id = conf['name']
 
         args = {
-            'owner': 'deeptendies',
+            'owner': 'karen',
             'depends_on_past': False,
             'start_date': datetime.now(),
-            'email': ['deeptendies@gmail.com'],
+            'email': ['karenzhang7717@gmail.com'],
             'email_on_failure': False,
             'email_on_retry': False,
             'retries': 1,
