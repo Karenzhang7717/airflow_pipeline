@@ -1,15 +1,14 @@
 from airflow.models import DAG
 from datetime import datetime, timedelta
 from airflow.operators.dummy import DummyOperator
-import json  # https://bigdata-etl.com/apache-airflow-create-dynamic-dag/
+import json 
+import os
 from airflow.operators.python import PythonOperator
 from karen_dag.operators.operator import read_from_psql,read_from_txt
 
 
-def create_dag(dag_id,
-               schedule,
-               default_args,
-               conf):
+def create_dag(dag_id,schedule,default_args,conf):
+    '''Task code that creates dags'''
     dag = DAG(dag_id, default_args=default_args, schedule_interval=schedule)
 
     with dag:
@@ -36,13 +35,13 @@ def create_dag(dag_id,
 
 
 def generate_dag_from_config():
-    import os
+    '''Task code that generates dags from configuration'''
     dir_path = os.path.dirname(os.path.realpath(__file__))
     with open(os.path.join(dir_path, 'config.json')) as json_data:
         conf = json.load(json_data)
         schedule = conf['schedule']
         dag_id = conf['name']
-
+        #sets arguments of the configuration
         args = {
             'owner': 'karen',
             'depends_on_past': False,
