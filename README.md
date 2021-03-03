@@ -1,32 +1,17 @@
 # Server info
-http://34.210.68.49:8080/
+The project is designed to be deployed using Docker and Airflow. The user interface can be accessed by:
 
-# connect to the vm instance:
+http://localhost:8080/home
 
-```
-stan@stan-ryzenrig:~/Downloads$ chmod 600 LightsailDefaultKey-us-west-2.pem 
-stan@stan-ryzenrig:~/Downloads$ ssh -i LightsailDefaultKey-us-west-2.pem ubuntu@34.210.68.49
-```
+Please find instructions for setting up below:
 
 
-# update your deployment
-after ssh into the vm
-```
-ubuntu@ip-172-26-13-211:~$ cd airflow_pipeline/
-ubuntu@ip-172-26-13-211:~/airflow_pipeline$ git fetch
-ubuntu@ip-172-26-13-211:~/airflow_pipeline$ git pull
-```
+# Docker Setup
 
+- Follow instructions from [here](http://airflow.apache.org/docs/apache-airflow/stable/start/docker.html) to download Docker Desktop
 
-# Airflow Setup
-
-http://airflow.apache.org/docs/apache-airflow/stable/start/docker.html
-
-~~`curl -LfO 'https://airflow.apache.org/docs/apache-airflow/2.0.1/docker-compose.yaml'`~~
-
-Don't run above script if using custom build image
-
-clone this repo, and then **cd into the directory where this repo is located**
+- clone this repo, and then **cd into the directory where this repo is located**
+- Run commands below
 
 ##### Init
 
@@ -44,60 +29,50 @@ docker-compose up airflow-init
 compose up
 
 ```
-//docker-compose up --build -d
+docker-compose up --build -d
 ```
-docker-compose up -d
-~~`docker-compose up -d`~~ (if custom building)
+Go to the Docker Desktop UI and launch 
 
-when done & ready to purge
-
-```
-docker-compose down --volumes
-docker-compose down --volumes --rmi all
-```
-```
-docker kill $(docker ps -q) # stop all containers:
-docker rm $(docker ps -a -q) # remove all containers
-docker rmi -f $(docker images -a -q)
-```
+![image-20210303120443790](C:\Users\yuton\AppData\Roaming\Typora\typora-user-images\image-20210303120443790.png)
 
 
 
-[ssh into airflow pod](https://phase2.github.io/devtools/common-tasks/ssh-into-a-container/)
+# Airflow Setup
 
-```
-docker exec -it airflow-tendie_airflow-webserver_1 /bin/bash
-docker exec -it airflow-tendie_airflow-webserver_1 pip install -r requirements.txt
-docker exec -it airflow-tendie_airflow-worker_1 pip install -r requirements.txt
-```
+- Login information: 
 
-[deletes everything](https://stackoverflow.com/questions/44785585/docker-how-to-delete-all-local-docker-images)
+    -username:airflow
 
-```
-docker system prune -a --volumes
-```
+    -password: airflow
 
-restart webserver
+# Postgres Setup
 
-```
-docker restart airflow-tendie_airflow-webserver_1
-```
+- In processdb.sql. change owner from "de_candidate" to "karen"
 
+- load processdb to Postgres database using PGAdmin/ command line, set up host = localhost, port = 5433
 
+- Direct to the location that PostgreSQL is installed, find pg_hba file (C:\Program Files\PostgreSQL\12\data\pg_hba ) in my case, and change METHOD to trust for all connections like below:
 
-```
-docker exec -it airflow-karen_postgres_karen_interview_1
+  ![image-20210303122513814](C:\Users\yuton\AppData\Roaming\Typora\typora-user-images\image-20210303122513814.png)
 
-echo "host all  all    0.0.0.0/0  md5" >> /var/lib/postgresql/data/pg_hba.conf
-echo "host all  all    ::/0  md5" >> /var/lib/postgresql/data/pg_hba.conf
-```
+- Grant access for user karen:
 
+  cd into the location to PostgresSQL's bin, run the command below:
 
+  C:\Program Files\PostgreSQL\12\bin>**psql.exe -U [*superuser*]**
 
+  Now you are logged in as the superuser, you should see "GRANT" on console. Run command below:
 
+  GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO karen;
 
-# connection
+  # Trigger DAG and view result
 
-![image-20210301214247423](README.assets/image-20210301214247423.png)
+- Trigger the dag:
 
-set connection like this
+  ![image-20210303124004097](C:\Users\yuton\AppData\Roaming\Typora\typora-user-images\image-20210303124004097.png)
+
+- The graph view should look like this:
+
+  ![image-20210303124106362](C:\Users\yuton\AppData\Roaming\Typora\typora-user-images\image-20210303124106362.png)
+
+- Go to the location that the repo is stored, the generated master_db.csv is located in the logs folder (e.g. D:\Karen\airflow_pipeline\logs)
