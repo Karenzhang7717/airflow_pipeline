@@ -5,6 +5,7 @@ from airflow.operators.python import PythonOperator
 from airflow.hooks.postgres_hook import PostgresHook
 from airflow.utils.decorators import apply_defaults
 import psycopg2, psycopg2.extras
+import logging
 
 from datetime import datetime, timedelta
 import os
@@ -28,34 +29,38 @@ def read_from_psql(ds, *args, **kwargs): # dag function
     sources=cursor.fetchall()
     for source in sources:
         print('sources: {0} - activated: {1}'.format(source[0],source[1]))
-    return sources
+    # return sources
 
-    hook = PostgresHook(postgres_conn_id='karen',
-                        postgres_default='karen',
-                        autocommit=True,
-                        database="karen",
-                        schema='public')
- 
-    request='SELECT * FROM ball_milling'
-    connection=hook.get_conn()
+    # hook = PostgresHook(postgres_conn_id='karen',
+    #                     postgres_default='karen',
+    #                     autocommit=True,
+    #                     database="karen",
+    #                     schema='public')
+    
+    # request='SELECT * FROM ball_milling'
+    # connection=hook.get_conn()
     print(connection)
     cursor=connection.cursor()
     cursor.execute(request)
     data_ball_milling=cursor.fetchall()
    # file_path="D:\\Karen\\test\\"
-    file_path="C:\\"
-    temp_path = file_path + '_dump_.csv'
+    file_path="/opt/airflow/logs/"
+    print(file_path)
+    # temp_path = file_path + '_dump_.csv'
     #temp_path = 'D:\\Karen\\test\\testbook.csv'
     tmp_path = file_path + 'dump.csv'
-    with open(tmp_path, 'w') as fp:
+    with open(tmp_path, 'w', newline='') as fp:
+        print(tmp_path)
         print('open success')
         a = csv.writer(fp, quoting = csv.QUOTE_ALL)
-        print('writer success')
-        print(cursor.description)
-        print(i[1] for i in cursor.description)
+        a.writerow('testing')
+        logging.info('testing+++++++++++++')
+        # print('writer success')
+        # print(cursor.description)
+        # print(i[1] for i in cursor.description)
         a.writerow(i[0] for i in cursor.description)
         a.writerow(data_ball_milling)
-        print('finished writing rows')
+        logging.info('finished writing rows')
     # full_path = temp_path + '.gz'
     # with open(temp_path, 'rb') as f:
     #     data = f.read()
@@ -65,6 +70,7 @@ def read_from_psql(ds, *args, **kwargs): # dag function
 
     for source in data_ball_milling:
         print('sources: {0} - activated: {1}'.format(source[0],source[1]))
+        print(os.getcwd()) 
     #return sources
 
     #todo:get data to be saved to csv.
