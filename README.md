@@ -31,11 +31,7 @@ compose up
 ```
 docker-compose up --build -d
 ```
-Go to the Docker Desktop UI and launch 
-
-![image-20210303120443790](C:\Users\yuton\AppData\Roaming\Typora\typora-user-images\image-20210303120443790.png)
-
-
+Go to the Docker Desktop UI and launch ![image-20210301214247423](README.assets/image-20210303120443790.png)]
 
 # Airflow Setup
 
@@ -47,13 +43,11 @@ Go to the Docker Desktop UI and launch
 
 # Postgres Setup
 
-- In processdb.sql. change owner from "de_candidate" to "karen"
-
-- load processdb to Postgres database using PGAdmin/ command line, set up host = localhost, port = 5433
+- Load processdb to Postgres database using PGAdmin/ command line, by running processdb.sql located in [airflow_pipeline](https://github.com/Karenzhang7717/airflow_pipeline/tree/karen_dev)/[dae-challenge](https://github.com/Karenzhang7717/airflow_pipeline/tree/karen_dev/dae-challenge)/**x-materials-database**/. Notice that the owner has been changed from "de_candidate" to "karen" in sql script. Set up host = localhost, port = 5433
 
 - Direct to the location that PostgreSQL is installed, find pg_hba file (C:\Program Files\PostgreSQL\12\data\pg_hba ) in my case, and change METHOD to trust for all connections like below:
 
-  ![image-20210303122513814](C:\Users\yuton\AppData\Roaming\Typora\typora-user-images\image-20210303122513814.png)
+  ![image-20210303122513814](README.assets\image-20210303122513814.png)
 
 - Grant access for user karen:
 
@@ -69,10 +63,10 @@ Go to the Docker Desktop UI and launch
 
 - Trigger the dag:
 
-  ![image-20210303124004097](C:\Users\yuton\AppData\Roaming\Typora\typora-user-images\image-20210303124004097.png)
+  ![image-20210303124004097](README.assets\image-20210303124004097.png)
 
 - The graph view should look like this:
 
-  ![image-20210303124106362](C:\Users\yuton\AppData\Roaming\Typora\typora-user-images\image-20210303124106362.png)
+  ![image-20210303124106362](README.assets\image-20210303124106362.png)
 
 - Go to the location that the repo is stored, the generated master_db.csv is located in the logs folder (e.g. D:\Karen\airflow_pipeline\logs)
