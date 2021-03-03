@@ -19,7 +19,7 @@ SET row_security = off;
 SET default_tablespace = '';
 
 --
--- Name: ball_milling; Type: TABLE; Schema: public; Owner: de_candidate
+-- Name: ball_milling; Type: TABLE; Schema: public; Owner: karen
 --
 
 CREATE TABLE public.ball_milling (
@@ -35,10 +35,10 @@ CREATE TABLE public.ball_milling (
 );
 
 
-ALTER TABLE public.ball_milling OWNER TO de_candidate;
+ALTER TABLE public.ball_milling OWNER TO karen;
 
 --
--- Name: hot_press; Type: TABLE; Schema: public; Owner: de_candidate
+-- Name: hot_press; Type: TABLE; Schema: public; Owner: karen
 --
 
 CREATE TABLE public.hot_press (
@@ -55,10 +55,10 @@ CREATE TABLE public.hot_press (
 );
 
 
-ALTER TABLE public.hot_press OWNER TO de_candidate;
+ALTER TABLE public.hot_press OWNER TO karen;
 
 --
--- Name: material_procurement; Type: TABLE; Schema: public; Owner: de_candidate
+-- Name: material_procurement; Type: TABLE; Schema: public; Owner: karen
 --
 
 CREATE TABLE public.material_procurement (
@@ -69,10 +69,10 @@ CREATE TABLE public.material_procurement (
 );
 
 
-ALTER TABLE public.material_procurement OWNER TO de_candidate;
+ALTER TABLE public.material_procurement OWNER TO karen;
 
 --
--- Data for Name: ball_milling; Type: TABLE DATA; Schema: public; Owner: de_candidate
+-- Data for Name: ball_milling; Type: TABLE DATA; Schema: public; Owner: karen
 --
 
 COPY public.ball_milling (uid, process_name, milling_time, milling_time_units, milling_speed, milling_speed_units, output_material_name, output_material_uid, hot_press_uid) FROM stdin;
@@ -126,7 +126,7 @@ MATX-BM046	high energy ball milling	60	hr	475	rpm	powder	MATX-BM-M046	MATX-HP046
 
 
 --
--- Data for Name: hot_press; Type: TABLE DATA; Schema: public; Owner: de_candidate
+-- Data for Name: hot_press; Type: TABLE DATA; Schema: public; Owner: karen
 --
 
 COPY public.hot_press (uid, process_name, hot_press_temperature, hot_press_temperature_units, hot_press_pressure, hot_press_pressure_units, hot_press_time, hot_press_time_units, output_material_name, output_material_uid) FROM stdin;
@@ -180,7 +180,7 @@ MATX-HP046	Hot Isostatic Press	2000	degC	200	MPa	0.5	hr	final pellet	MATX-HP-M04
 
 
 --
--- Data for Name: material_procurement; Type: TABLE DATA; Schema: public; Owner: de_candidate
+-- Data for Name: material_procurement; Type: TABLE DATA; Schema: public; Owner: karen
 --
 
 COPY public.material_procurement (uid, material_name, mass_fraction, ball_milling_uid) FROM stdin;
@@ -326,7 +326,7 @@ MATX-PR-138	Se	0.0599999987	MATX-BM046
 
 
 --
--- Name: ball_milling ball_milling_pkey; Type: CONSTRAINT; Schema: public; Owner: de_candidate
+-- Name: ball_milling ball_milling_pkey; Type: CONSTRAINT; Schema: public; Owner: karen
 --
 
 ALTER TABLE ONLY public.ball_milling
@@ -334,7 +334,7 @@ ALTER TABLE ONLY public.ball_milling
 
 
 --
--- Name: hot_press hot_press_pkey; Type: CONSTRAINT; Schema: public; Owner: de_candidate
+-- Name: hot_press hot_press_pkey; Type: CONSTRAINT; Schema: public; Owner: karen
 --
 
 ALTER TABLE ONLY public.hot_press
@@ -342,7 +342,7 @@ ALTER TABLE ONLY public.hot_press
 
 
 --
--- Name: material_procurement material_procurement_pkey; Type: CONSTRAINT; Schema: public; Owner: de_candidate
+-- Name: material_procurement material_procurement_pkey; Type: CONSTRAINT; Schema: public; Owner: karen
 --
 
 ALTER TABLE ONLY public.material_procurement
@@ -350,7 +350,7 @@ ALTER TABLE ONLY public.material_procurement
 
 
 --
--- Name: ball_milling ball_milling_hot_press_uid_fkey; Type: FK CONSTRAINT; Schema: public; Owner: de_candidate
+-- Name: ball_milling ball_milling_hot_press_uid_fkey; Type: FK CONSTRAINT; Schema: public; Owner: karen
 --
 
 ALTER TABLE ONLY public.ball_milling
@@ -358,7 +358,7 @@ ALTER TABLE ONLY public.ball_milling
 
 
 --
--- Name: material_procurement material_procurement_ball_milling_uid_fkey; Type: FK CONSTRAINT; Schema: public; Owner: de_candidate
+-- Name: material_procurement material_procurement_ball_milling_uid_fkey; Type: FK CONSTRAINT; Schema: public; Owner: karen
 --
 
 ALTER TABLE ONLY public.material_procurement
