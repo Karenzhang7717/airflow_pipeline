@@ -80,6 +80,8 @@ def read_from_txt(ds, *args, **kwargs):
     files = os.listdir(dirpath)
     regex = re.compile(r'[\n\r\t]')
     #gathers all data uses Hall as the measurement
+    
+    df_hall=pd.DataFrame(columns=["data source","material_uid","Measurement","Probe Resistance (ohm)","Gas Flow Rate (L/min)", "Gas Type", "Probe Material", "Current (mA)", "Field Strength (T)", "Sample Position","Magnet Reversal"])
     for filename in files:
         with open(dirpath + '/' + filename) as afile:
             row=[] # list of values we will be constructing       
@@ -87,21 +89,29 @@ def read_from_txt(ds, *args, **kwargs):
                 line_input = line.strip('" \n') 
                 words=regex.sub(" ",line_input).split(' ')[-1]
                 row.append(words) # adds the retrieved value to our row
+
+               
             row.insert(0,'X-LABS DATA')
+        
         if row[2]=='Hall':
-            csvout.writerow(row)
+            df_hall.loc[len(df_hall)]=row
+            print(row)
+            print("*****")
+            print(df_hall)
+          #  csvout.writerow(row)
+    print(df_hall)
  
-    connection = psycopg2.connect(user='karen',
-                            password='karen',
-                            host='host.docker.internal',
-                            port='5432',
-                            database='postgres')#sets connection to sql database
-    cursor=connection.cursor()
-    engine = create_engine('postgresql://karen:passwordkaren@localhost:5432/postgres')
-    df=[]
-    #TODO: sql set primary key
-    df.to_sql('table_name', engine)   #write Hall results to psql database
-    cursor.execute("")
+    # connection = psycopg2.connect(user='karen',
+    #                         password='karen',
+    #                         host='host.docker.internal',
+    #                         port='5432',
+    #                         database='postgres')#sets connection to sql database
+    # cursor=connection.cursor()
+    # engine = create_engine('postgresql://karen:passwordkaren@localhost:5432/postgres')
+    # df=[]
+    # #TODO: sql set primary key
+    # df.to_sql('table_name', engine)   #write Hall results to psql database
+    # cursor.execute("")
 
     #write headers
     csvout.writerow(['data source','material_uid','Measurement','Pb concentration','Sn concentration','O Concentration','Gas Flow Rate (L/min)','Gas Type','Plasma Temperature (celsius)','Detector Temperature (celsius)','Field Strength (T)','Plasma Observation','Radio Frequency (MHz)'])
