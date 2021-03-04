@@ -154,15 +154,11 @@ def read_from_txt_icp(ds, *args, **kwargs):
  
 def generate_master_csv(ds, *args, **kwargs):
     df_x_process=pd.read_json(read_from_psql(1))
-    print("df4 is............................................")
-    print(df_x_process)
+    df_x_process['uid'] = pd.DataFrame([y for x in df_x_process['uid'].values.tolist() for y in x])
     df_hall=pd.read_json( read_from_txt_hall(2))
-    df_hall['material_uid']=json_normalize(df_hall['material_uid'])
+    df_hall['material_uid'] = pd.DataFrame([y for x in df_hall['material_uid'].values.tolist() for y in x])
     df_icp=pd.read_json( read_from_txt_icp(2))
-    df_icp=df_icp.apply(json_normalize)
-    #print(df_hall)
-   # df_x_process['uid'] = df_x_process['uid'].astype(str)
-    #df_hall['material_uid'] = df_hall['material_uid'].astype(str)
+    df_icp['material_uid'] = pd.DataFrame([y for x in df_icp['material_uid'].values.tolist() for y in x])
     df1=pd.merge(df_x_process, df_hall, how='left', left_on='uid', right_on='material_uid')
     df_x_process['uid'].convert_dtypes()
     print(df_x_process.columns.tolist())
@@ -170,6 +166,5 @@ def generate_master_csv(ds, *args, **kwargs):
     print(df1)
     print(df_x_process['uid'].dtype)
     print(df_hall['material_uid'].dtype)
-   
     df2=pd.merge(df1, df_icp, how='left', left_on='uid', right_on='material_uid')
     df2.to_csv(r'/opt/airflow/logs/master_db1.csv', header='true')
