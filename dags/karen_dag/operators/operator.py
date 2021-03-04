@@ -29,43 +29,19 @@ def read_from_psql(ds, *args, **kwargs):
     cursor.execute(request)
     data_ball_milling=cursor.fetchall()
     df_ball_milling = pd.DataFrame(data_ball_milling,columns=["uid","process_name","milling_time", "milling_time_units", "milling_speed", "milling_speed_units", "output_material_name", "output_material_uid", "hot_press_uid"])
-    print(df_ball_milling[:10])
-
-
-    #file path to save the master csv db
-    file_path="/opt/airflow/logs/"
-    tmp_path = file_path + 'master_db.csv'
-    #save the queried data from ball_milling to master_db.csv
-    with open(tmp_path, 'w', newline='') as fp:
-        a = csv.writer(fp, quoting = csv.QUOTE_MINIMAL, delimiter = ',')
-        a.writerow(i[0] for i in cursor.description)
-        for data in data_ball_milling:
-            a.writerow(data)
-
+    
     #query data from hot_press table 
     request2='SELECT * FROM hot_press'
     cursor.execute(request2)
     data_hot_press=cursor.fetchall()
     df_hot_press = pd.DataFrame(data_hot_press,columns=["uid", "process_name", "hot_press_temperature", "hot_press_temperature_units", "hot_press_pressure", "hot_press_pressure_units", "hot_press_time", "hot_press_time_units", "output_material_name", "output_material_uid"])
-    #save the queried data from hot_press to master_db.csv
-    with open(tmp_path, 'a', newline='') as fp:
-        a = csv.writer(fp, quoting = csv.QUOTE_MINIMAL, delimiter = ',')
-        a.writerow(i[0] for i in cursor.description)
-        for data in data_hot_press:
-            a.writerow(data)
+  
     #query data from material_procurement table    
     request3='SELECT * FROM material_procurement'
     cursor.execute(request3)
     data_material_proc=cursor.fetchall()
     df_material_proc = pd.DataFrame(data_material_proc,columns=['uid','material_name','mass_fraction','ball_milling_uid'])
   
-    #df_material_proc1 = pd.DataFrame(columns=['uid','material_name','mass_fraction','ball_milling_uid'])
-   # df_material_proc1.append(df_material_proc, ignore_index = True)
-    with open(tmp_path, 'a', newline='') as fp:
-        a = csv.writer(fp, quoting = csv.QUOTE_MINIMAL, delimiter = ',')
-        a.writerow(i[0] for i in cursor.description)
-        for data in data_material_proc:
-            a.writerow(data)
     df1=pd.merge(df_material_proc, df_ball_milling, how='left', left_on='ball_milling_uid', right_on='uid')
     df2=pd.merge(df1, df_hot_press, how='left', left_on='hot_press_uid', right_on='uid') #join dataframes from X-processing together
     return df2.to_json()
@@ -89,9 +65,11 @@ def read_from_txt_hall(ds, *args, **kwargs):
             df_hall.loc[len(df_hall)]=row #only append to database if uses Hall measurement
     cursor=connection.cursor()
     engine = create_engine('postgresql://karen:passwordkaren@host.docker.internal:5432/postgres') #connects to postgres database
-    #TODO: sql set primary key
     df_hall.to_sql('lab_hall', engine,if_exists='replace',index=False)   #write the dataframe to psql database
-   # cursor.execute("SELECT * FROM lab_hall")
+    # cursor=connection.cursor()
+    # cursor.execute("ALTER TABLE ONLY lab_hall ADD CONSTRAINT lab_hall_pkey PRIMARY KEY (material_uid);") #add primary key
+    # cursor.execute("ALTER TABLE ONLY lab_hall \
+    # ADD CONSTRAINT lab_hall_material_uid_fkey FOREIGN KEY (material_uid) REFERENCES hot_press(output_material_uid);") #add foreign key
     return df_hall.to_json() #returns json object of the dataframe
 
 
@@ -118,7 +96,9 @@ def read_from_txt_icp(ds, *args, **kwargs):
     engine = create_engine('postgresql://karen:passwordkaren@host.docker.internal:5432/postgres')#connects to postgres database
     df_icp.to_sql('lab_icp', engine,if_exists='replace',index=False)   #write icp results to psql database
     # cursor=connection.cursor()
-    # cursor.execute("SELECT * FROM lab_icp")
+    # cursor.execute("ALTER TABLE ONLY lab_icp ADD CONSTRAINT lab_icp_pkey PRIMARY KEY (material_uid);") #add primary key
+    # cursor.execute("ALTER TABLE ONLY lab_icp \
+    # ADD CONSTRAINT lab_icp_material_uid_fkey FOREIGN KEY (material_uid) REFERENCES hot_press(output_material_uid);") #add foreign key
     # data_icp=cursor.fetchall()
     # df_icp_psql = pd.DataFrame(data_icp)
     # print(df_icp_psql)
@@ -135,4 +115,4 @@ def generate_master_csv(ds, *args, **kwargs):
  
     df1=pd.merge(df_x_process, df_hall, how='left', left_on='output_material_uid_y', right_on='material_uid')#join data from X-Lab and X-Processing together
     df2=pd.merge(df1, df_icp, how='left', left_on='output_material_uid_y', right_on='material_uid')
-    df2.to_csv(r'/opt/airflow/logs/master_db1.csv', header='true') #export to master csv file
+    df2.to_csv(r'/opt/airflow/logs/master_db1.csv', header='true', index=False) #export to master csv file
