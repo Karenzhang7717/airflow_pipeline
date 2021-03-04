@@ -6,6 +6,8 @@ import os
 import csv
 import re
 from itertools import islice
+import pandas as pd
+from sqlalchemy import create_engine
 
 def read_from_psql(ds, *args, **kwargs):
     '''A dag function that reads data from Procurement and X-processing's psql database and saves the queried data to the master csv file.
@@ -21,6 +23,10 @@ def read_from_psql(ds, *args, **kwargs):
     cursor=connection.cursor()
     cursor.execute(request)
     data_ball_milling=cursor.fetchall()
+    df_ball_milling = pd.DataFrame(data_ball_milling)
+    print(df_ball_milling[:10])
+
+
     #file path to save the master csv db
     file_path="/opt/airflow/logs/"
     tmp_path = file_path + 'master_db.csv'
@@ -35,6 +41,7 @@ def read_from_psql(ds, *args, **kwargs):
     request2='SELECT * FROM hot_press'
     cursor.execute(request2)
     data_hot_press=cursor.fetchall()
+    df_hot_press = pd.DataFrame(data_hot_press)
     #save the queried data from hot_press to master_db.csv
     with open(tmp_path, 'a', newline='') as fp:
         a = csv.writer(fp, quoting = csv.QUOTE_MINIMAL, delimiter = ',')
@@ -45,12 +52,21 @@ def read_from_psql(ds, *args, **kwargs):
     request3='SELECT * FROM material_procurement'
     cursor.execute(request3)
     data_material_proc=cursor.fetchall()
+   # df_material_proc = pd.DataFrame()
+    #df_material_proc.loc[0]=i[0] for i in cursor.description
+    df_material_proc = pd.DataFrame(data_material_proc)
+    #TODO: ADD HEADERS
+    #headers_material_proc=i[0] for i in cursor.description
+    #df_material_proc.loc[-1]=['a','b']
     #save the queried data from material_procurement to master_db.csv
     with open(tmp_path, 'a', newline='') as fp:
         a = csv.writer(fp, quoting = csv.QUOTE_MINIMAL, delimiter = ',')
         a.writerow(i[0] for i in cursor.description)
         for data in data_material_proc:
             a.writerow(data)
+    #df1=pd.merge(df_material_proc, df_ball_milling, how='left', left_on='ball_milling_uid', right_on='uid')
+    #df1=df_ball_milling.join (df_material_proc.set_index( [ 'ball_milling_uid' ], verify_integrity=True ),on=[ 'uid' ], how='left' )
+    print(df_material_proc[:10])
 
 def read_from_txt(ds, *args, **kwargs):
     '''A dag function that reads data from X-lab's txt files and saves the queried data to the master csv file.
@@ -76,6 +92,18 @@ def read_from_txt(ds, *args, **kwargs):
             row.insert(0,'X-LABS DATA')
         if row[2]=='Hall':
             csvout.writerow(row)
+ 
+    connection = psycopg2.connect(user='karen',
+                            password='karen',
+                            host='host.docker.internal',
+                            port='5432',
+                            database='postgres')#sets connection to sql database
+    cursor=connection.cursor()
+    engine = create_engine('postgresql://karen:passwordkaren@localhost:5432/postgres')
+    df=[]
+    #TODO: sql set primary key
+    df.to_sql('table_name', engine)   #write Hall results to psql database
+    cursor.execute("")
 
     #write headers
     csvout.writerow(['data source','material_uid','Measurement','Pb concentration','Sn concentration','O Concentration','Gas Flow Rate (L/min)','Gas Type','Plasma Temperature (celsius)','Detector Temperature (celsius)','Field Strength (T)','Plasma Observation','Radio Frequency (MHz)'])

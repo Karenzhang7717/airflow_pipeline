@@ -1,9 +1,9 @@
 from airflow.models import DAG
-from datetime import datetime, timedelta
 from airflow.operators.dummy import DummyOperator
+from airflow.operators.python import PythonOperator
+from datetime import datetime, timedelta
 import json 
 import os
-from airflow.operators.python import PythonOperator
 from karen_dag.operators.operator import read_from_psql,read_from_txt
 
 
