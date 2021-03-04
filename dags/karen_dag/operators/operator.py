@@ -130,18 +130,9 @@ def generate_master_csv(ds, *args, **kwargs):
     Combines dataframes from X-Processing, X-labs together and generates a master csv file with all data
     '''
     df_x_process=pd.read_json(read_from_psql(1))
- 
-    #df_x_process['uid'] = pd.DataFrame([y for x in df_x_process['uid'].values.tolist() for y in x])
     df_hall=pd.read_json( read_from_txt_hall(2))
-    #df_hall['material_uid_hall'] = pd.DataFrame([y for x in df_hall['material_uid_hall'].values.tolist() for y in x])
- 
     df_icp=pd.read_json( read_from_txt_icp(2))
  
-    #df_icp['material_uid'] = pd.DataFrame([y for x in df_icp['material_uid'].values.tolist() for y in x])
-    df1=pd.merge(df_x_process, df_hall, how='left', left_on='uid', right_on='material_uid')#join data from X-Lab and X-Processing together
-   # df_x_process['uid'].convert_dtypes()
-    print(df_x_process.columns.tolist())
-    print(df_hall.columns.tolist())
-    print(df1)
-    df2=pd.merge(df1, df_icp, how='left', left_on='uid', right_on='material_uid')
-    df2.to_csv(r'/opt/airflow/logs/master_db1.csv', header='true')
+    df1=pd.merge(df_x_process, df_hall, how='left', left_on='output_material_uid_y', right_on='material_uid')#join data from X-Lab and X-Processing together
+    df2=pd.merge(df1, df_icp, how='left', left_on='output_material_uid_y', right_on='material_uid')
+    df2.to_csv(r'/opt/airflow/logs/master_db1.csv', header='true') #export to master csv file
