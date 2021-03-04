@@ -41,7 +41,7 @@ def read_from_psql(ds, *args, **kwargs):
     request2='SELECT * FROM hot_press'
     cursor.execute(request2)
     data_hot_press=cursor.fetchall()
-    df_hot_press = pd.DataFrame(data_hot_press)
+    df_hot_press = pd.DataFrame(data_hot_press,columns=["uid", "process_name", "hot_press_temperature", "hot_press_temperature_units", "hot_press_pressure", "hot_press_pressure_units", "hot_press_time", "hot_press_time_units", "output_material_name", "output_material_uid"])
     #save the queried data from hot_press to master_db.csv
     with open(tmp_path, 'a', newline='') as fp:
         a = csv.writer(fp, quoting = csv.QUOTE_MINIMAL, delimiter = ',')
@@ -57,18 +57,14 @@ def read_from_psql(ds, *args, **kwargs):
     #df_material_proc1 = pd.DataFrame(columns=['uid','material_name','mass_fraction','ball_milling_uid'])
    # df_material_proc1.append(df_material_proc, ignore_index = True)
     print('!!!!!!')
-
-    #TODO: ADD HEADERS
-    #headers_material_proc=i[0] for i in cursor.description
-    #df_material_proc.loc[-1]=['a','b']
-    #save the queried data from material_procurement to master_db.csv
     with open(tmp_path, 'a', newline='') as fp:
         a = csv.writer(fp, quoting = csv.QUOTE_MINIMAL, delimiter = ',')
         a.writerow(i[0] for i in cursor.description)
         for data in data_material_proc:
             a.writerow(data)
     df1=pd.merge(df_material_proc, df_ball_milling, how='left', left_on='ball_milling_uid', right_on='uid')
-    print(df1[:10])
+    df2=pd.merge(df1, df_hot_press, how='left', left_on='hot_press_uid', right_on='uid')
+    print(df2[:10])
 
 def read_from_txt(ds, *args, **kwargs):
     '''A dag function that reads data from X-lab's txt files and saves the queried data to the master csv file.
