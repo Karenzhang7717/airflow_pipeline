@@ -63,8 +63,9 @@ def read_from_psql(ds, *args, **kwargs):
             a.writerow(data)
     df1=pd.merge(df_material_proc, df_ball_milling, how='left', left_on='ball_milling_uid', right_on='uid')
     df2=pd.merge(df1, df_hot_press, how='left', left_on='hot_press_uid', right_on='uid')
+    print("df2 is............................................")
     print(df2[:10])
-    #return df2
+    return df2.to_json()
 
 def read_from_txt(ds, *args, **kwargs):
     '''A dag function that reads data from X-lab's txt files and saves the queried data to the master csv file.
@@ -149,3 +150,7 @@ def read_from_txt(ds, *args, **kwargs):
     print(df_icp_psql)
  
  
+def generate_master_csv(ds, *args, **kwargs):
+    df4=pd.read_json(read_from_psql(1))
+    print("df4 is............................................")
+    print(df4)
