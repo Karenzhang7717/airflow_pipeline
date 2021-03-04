@@ -4,7 +4,7 @@ from airflow.operators.python import PythonOperator
 from datetime import datetime, timedelta
 import json 
 import os
-from karen_dag.operators.operator import read_from_psql,read_from_txt,generate_master_csv
+from karen_dag.operators.operator import read_from_psql,read_from_txt_hall,read_from_txt_icp,generate_master_csv
 
 
 def create_dag(dag_id,schedule,default_args,conf):
@@ -22,9 +22,14 @@ def create_dag(dag_id,schedule,default_args,conf):
             dag=dag
         )
 
-        x_material = PythonOperator(
-            task_id='data_from_txt',
-            python_callable=read_from_txt,
+        x_material_hall = PythonOperator(
+            task_id='data_from_txt_hall',
+            python_callable=read_from_txt_hall,
+            dag=dag
+        )
+        x_material_icp = PythonOperator(
+            task_id='data_from_txt_icp',
+            python_callable=read_from_txt_icp,
             dag=dag
         )
         generate_csv = PythonOperator(
@@ -35,7 +40,7 @@ def create_dag(dag_id,schedule,default_args,conf):
 
 
 
-        init >> Procurement_and_x_processing >> x_material >>generate_csv
+        init >> Procurement_and_x_processing >> x_material_hall >> x_material_icp>>generate_csv
 
         return dag
 
