@@ -64,6 +64,7 @@ def read_from_psql(ds, *args, **kwargs):
     df1=pd.merge(df_material_proc, df_ball_milling, how='left', left_on='ball_milling_uid', right_on='uid')
     df2=pd.merge(df1, df_hot_press, how='left', left_on='hot_press_uid', right_on='uid')
     print(df2[:10])
+    #return df2
 
 def read_from_txt(ds, *args, **kwargs):
     '''A dag function that reads data from X-lab's txt files and saves the queried data to the master csv file.
@@ -129,7 +130,7 @@ def read_from_txt(ds, *args, **kwargs):
     #write headers
    # csvout.writerow(['data source','material_uid','Measurement','Pb concentration','Sn concentration','O Concentration','Gas Flow Rate (L/min)','Gas Type','Plasma Temperature (celsius)','Detector Temperature (celsius)','Field Strength (T)','Plasma Observation','Radio Frequency (MHz)'])
     #gathers all data uses ICP as the measurement
-    df_icp=pd.DataFrame(columns=['data source','material_uid','Measurement','Pb concentration','Sn concentration','O Concentration','Gas Flow Rate (L/min)','Gas Type','Plasma Temperature (celsius)','Detector Temperature (celsius)','Field Strength (T)','Plasma Observation','Radio Frequency (MHz)'])
+    df_icp=pd.DataFrame(columns=['material_uid','Measurement','Pb_concentration','Sn_concentration','O_Concentration','Gas_Flow_Rate_L_per_min','Gas_Type','Plasma_Temperature_celsius','Detector_Temperature_celsius','Field_Strength_T','Plasma_Observation','Radio_Frequency_MHz'])
     for filename in files:
         with open(dirpath + '/' + filename) as afile:
             row=[] # list of values we will be constructing
@@ -137,9 +138,14 @@ def read_from_txt(ds, *args, **kwargs):
                 line_input = line.strip('" \n') 
                 words=regex.sub(" ",line_input).split(' ')[-1]
                 row.append(words) # adds the retrieved value to our row
-            row.insert(0,'X-LABS DATA')
-        if row[2]=='ICP':
+          #  row.insert(0,'X-LABS DATA')
+        if row[1]=='ICP':
             df_icp.loc[len(df_icp)]=row
             #csvout.writerow(row)
-    print(df_icp)
-    #outfile.close()
+    df_icp.to_sql('lab_icp', engine,if_exists='replace',index=False)   #write icp results to psql database
+    cursor.execute("SELECT * FROM lab_icp")
+    data_icp=cursor.fetchall()
+    df_icp_psql = pd.DataFrame(data_icp)
+    print(df_icp_psql)
+ 
+ 
