@@ -23,7 +23,7 @@ def read_from_psql(ds, *args, **kwargs):
     cursor=connection.cursor()
     cursor.execute(request)
     data_ball_milling=cursor.fetchall()
-    df_ball_milling = pd.DataFrame(data_ball_milling)
+    df_ball_milling = pd.DataFrame(data_ball_milling,columns=["uid","process_name","milling_time", "milling_time_units", "milling_speed", "milling_speed_units", "output_material_name", "output_material_uid", "hot_press_uid"])
     print(df_ball_milling[:10])
 
 
@@ -52,9 +52,12 @@ def read_from_psql(ds, *args, **kwargs):
     request3='SELECT * FROM material_procurement'
     cursor.execute(request3)
     data_material_proc=cursor.fetchall()
-   # df_material_proc = pd.DataFrame()
-    #df_material_proc.loc[0]=i[0] for i in cursor.description
-    df_material_proc = pd.DataFrame(data_material_proc)
+    df_material_proc = pd.DataFrame(data_material_proc,columns=['uid','material_name','mass_fraction','ball_milling_uid'])
+  
+    #df_material_proc1 = pd.DataFrame(columns=['uid','material_name','mass_fraction','ball_milling_uid'])
+   # df_material_proc1.append(df_material_proc, ignore_index = True)
+    print('!!!!!!')
+
     #TODO: ADD HEADERS
     #headers_material_proc=i[0] for i in cursor.description
     #df_material_proc.loc[-1]=['a','b']
@@ -64,9 +67,8 @@ def read_from_psql(ds, *args, **kwargs):
         a.writerow(i[0] for i in cursor.description)
         for data in data_material_proc:
             a.writerow(data)
-    #df1=pd.merge(df_material_proc, df_ball_milling, how='left', left_on='ball_milling_uid', right_on='uid')
-    #df1=df_ball_milling.join (df_material_proc.set_index( [ 'ball_milling_uid' ], verify_integrity=True ),on=[ 'uid' ], how='left' )
-    print(df_material_proc[:10])
+    df1=pd.merge(df_material_proc, df_ball_milling, how='left', left_on='ball_milling_uid', right_on='uid')
+    print(df1[:10])
 
 def read_from_txt(ds, *args, **kwargs):
     '''A dag function that reads data from X-lab's txt files and saves the queried data to the master csv file.
