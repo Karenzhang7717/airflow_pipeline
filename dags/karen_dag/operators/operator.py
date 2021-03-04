@@ -67,104 +67,81 @@ def read_from_psql(ds, *args, **kwargs):
         for data in data_material_proc:
             a.writerow(data)
     df1=pd.merge(df_material_proc, df_ball_milling, how='left', left_on='ball_milling_uid', right_on='uid')
-    df2=pd.merge(df1, df_hot_press, how='left', left_on='hot_press_uid', right_on='uid')
-    print("df2 is............................................")
-    print(df2[:10])
+    df2=pd.merge(df1, df_hot_press, how='left', left_on='hot_press_uid', right_on='uid') #join dataframes from X-processing together
     return df2.to_json()
 
 def read_from_txt_hall(ds, *args, **kwargs):
-    '''A dag function that reads data from X-lab's txt files and saves the queried data to the master csv file.
     '''
-    #the file path that saved x-lab's data
-   # dirpath = '/opt/airflow/logs/x-lab-data'
-    #output file path
-    output="/opt/airflow/logs/master_db.csv"
-    outfile = open(output, 'a',newline='')
-    csvout = csv.writer(outfile)
-    #write headers
-    #csvout.writerow(['data_source','material_uid','Measurement','Probe_Resistance (ohm)','Gas_Flow_Rate_(L/min)','Gas_Type','Probe_Material','Current_(mA)','Field_Strength_(T)','Sample_Position','Magnet_Reversal'])
-    #files = os.listdir(dirpath)
-   # regex = re.compile(r'[\n\r\t]')
-    #gathers all data uses Hall as the measurement
-    
+    A dag function that reads data from X-lab's measurements using Hall into a dataframe, and saves the dataframe to psql database
+    Returns:
+      The json object of the X lab's results measured by Hall.
+    '''
     df_hall=pd.DataFrame(columns=["material_uid","Measurement","Probe_Resistance_ohm","Gas_Flow_Rate_L_per_min",\
         "Gas_Type", "Probe_Material", "Current_mA", "Field_Strength_T", "Sample_Position","Magnet_Reversal"])
-    for filename in files:
+    for filename in files:  #read from csv, and gathers all data uses Hall as the measurement
         with open(dirpath + '/' + filename) as afile:
-            row=[] # list of values we will be constructing       
-            for line in islice(afile, 2, None):#extract from the third row
+            row=[]      
+            for line in islice(afile, 2, None): #extract from the third row of the file for useful information
                 line_input = line.strip('" \n') 
                 words=regex.sub(" ",line_input).split(' ')[-1]
                 row.append(words) # adds the retrieved value to our row
- 
         if row[1]=='Hall':
-            df_hall.loc[len(df_hall)]=row
-   # print(df_hall)
- 
-  
+            df_hall.loc[len(df_hall)]=row #only append to database if uses Hall measurement
     cursor=connection.cursor()
-    # cursor.execute("CREATE TABLE IF NOT EXISTS public.lab_hall (\
-    # data_source character varying(30),\
-    # material_uid character varying(40),\
-    # Measurement character varying(20),\
-    # Probe_Resistance_ohm real,\
-    # Gas_Flow_Rate_L_per_min real,\
-    # Gas_Type character varying(10),\
-    # Probe_Material character varying(10),\
-    # Current_mA real,\
-    # Field_Strength_T real,\
-    # Sample_Position real,\
-    # Magnet_Reversal character varying(10))")
- 
-    engine = create_engine('postgresql://karen:passwordkaren@host.docker.internal:5432/postgres')
-    #cursor.execute("DROP TABLE IF EXISTS lab_hall")
+    engine = create_engine('postgresql://karen:passwordkaren@host.docker.internal:5432/postgres') #connects to postgres database
     #TODO: sql set primary key
-    df_hall.to_sql('lab_hall', engine,if_exists='replace',index=False)   #write Hall results to psql database
-    cursor.execute("SELECT * FROM lab_hall")
-    # data_hall=cursor.fetchall()
-    # df_hall_psql = pd.DataFrame(data_hall)
-    # print(df_hall_psql)
-    #gathers all data uses ICP as the measurement
-    return df_hall.to_json()
+    df_hall.to_sql('lab_hall', engine,if_exists='replace',index=False)   #write the dataframe to psql database
+   # cursor.execute("SELECT * FROM lab_hall")
+    return df_hall.to_json() #returns json object of the dataframe
 
 
 
 def read_from_txt_icp(ds, *args, **kwargs):
-   # files = os.listdir(dirpath)
-    #regex = re.compile(r'[\n\r\t]')
-    df_icp=pd.DataFrame(columns=['material_uid','Measurement','Pb_concentration','Sn_concentration','O_Concentration','Gas_Flow_Rate_L_per_min','Gas_Type','Plasma_Temperature_celsius','Detector_Temperature_celsius','Field_Strength_T','Plasma_Observation','Radio_Frequency_MHz'])
+    '''
+    A dag function that reads data from X-lab's measurements using ICP into a dataframe, and saves the dataframe to psql database
+    Returns:
+      The json object of the X lab's results measured by ICP.
+    '''
+    df_icp=pd.DataFrame(columns=['material_uid','Measurement','Pb_concentration','Sn_concentration','O_Concentration',\
+        'Gas_Flow_Rate_L_per_min','Gas_Type','Plasma_Temperature_celsius','Detector_Temperature_celsius','Field_Strength_T',\
+            'Plasma_Observation','Radio_Frequency_MHz'])
     for filename in files:
         with open(dirpath + '/' + filename) as afile:
-            row=[] # list of values we will be constructing
-            for line in islice(afile, 2, None):#extract from the third row
+            row=[] 
+            for line in islice(afile, 2, None):#extract from the third row for useful information
                 line_input = line.strip('" \n') 
                 words=regex.sub(" ",line_input).split(' ')[-1]
                 row.append(words) # adds the retrieved value to our row
         if row[1]=='ICP':
-            df_icp.loc[len(df_icp)]=row
-    engine = create_engine('postgresql://karen:passwordkaren@host.docker.internal:5432/postgres')
+            df_icp.loc[len(df_icp)]=row   #only append to database if uses ICP measurement
+
+    engine = create_engine('postgresql://karen:passwordkaren@host.docker.internal:5432/postgres')#connects to postgres database
     df_icp.to_sql('lab_icp', engine,if_exists='replace',index=False)   #write icp results to psql database
-    cursor=connection.cursor()
-    cursor.execute("SELECT * FROM lab_icp")
-    data_icp=cursor.fetchall()
-    df_icp_psql = pd.DataFrame(data_icp)
-    print(df_icp_psql)
+    # cursor=connection.cursor()
+    # cursor.execute("SELECT * FROM lab_icp")
+    # data_icp=cursor.fetchall()
+    # df_icp_psql = pd.DataFrame(data_icp)
+    # print(df_icp_psql)
     return df_icp.to_json()
  
  
 def generate_master_csv(ds, *args, **kwargs):
+    '''
+    Combines dataframes from X-Processing, X-labs together and generates a master csv file with all data
+    '''
     df_x_process=pd.read_json(read_from_psql(1))
-    df_x_process['uid'] = pd.DataFrame([y for x in df_x_process['uid'].values.tolist() for y in x])
+ 
+    #df_x_process['uid'] = pd.DataFrame([y for x in df_x_process['uid'].values.tolist() for y in x])
     df_hall=pd.read_json( read_from_txt_hall(2))
-    df_hall['material_uid'] = pd.DataFrame([y for x in df_hall['material_uid'].values.tolist() for y in x])
+    #df_hall['material_uid_hall'] = pd.DataFrame([y for x in df_hall['material_uid_hall'].values.tolist() for y in x])
+ 
     df_icp=pd.read_json( read_from_txt_icp(2))
-    df_icp['material_uid'] = pd.DataFrame([y for x in df_icp['material_uid'].values.tolist() for y in x])
-    df1=pd.merge(df_x_process, df_hall, how='left', left_on='uid', right_on='material_uid')
-    df_x_process['uid'].convert_dtypes()
+ 
+    #df_icp['material_uid'] = pd.DataFrame([y for x in df_icp['material_uid'].values.tolist() for y in x])
+    df1=pd.merge(df_x_process, df_hall, how='left', left_on='uid', right_on='material_uid')#join data from X-Lab and X-Processing together
+   # df_x_process['uid'].convert_dtypes()
     print(df_x_process.columns.tolist())
     print(df_hall.columns.tolist())
     print(df1)
-    print(df_x_process['uid'].dtype)
-    print(df_hall['material_uid'].dtype)
     df2=pd.merge(df1, df_icp, how='left', left_on='uid', right_on='material_uid')
     df2.to_csv(r'/opt/airflow/logs/master_db1.csv', header='true')

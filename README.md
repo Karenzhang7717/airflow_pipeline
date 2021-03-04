@@ -1,4 +1,4 @@
-The project is designed using Airflow and Docker. Since processing data from X-lab and X-processing can involve a sequence of operations, DAGs in Airflow will play an important role as they can be individually retried on failure and restarted when operation failed. Scheduler in Airflow makes it convenient for scheduling routine data processing tasks. Docker enables more efficient use of system resources, and makes it faster for software delivery cycles.
+The project is designed using Apache Airflow and Docker. Since processing data from X-lab and X-processing can involve a sequence of operations, DAGs in Airflow will play an important role as they can be individually retried on failure and restarted when operation failed. Scheduler in Airflow makes it convenient for scheduling routine data processing tasks. Docker enables more efficient use of system resources, and makes it faster for software delivery cycles.
 
 
 
