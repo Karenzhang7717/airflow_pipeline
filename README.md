@@ -1,5 +1,10 @@
+The project is designed using Airflow and Docker. Since processing data from X-lab and X-processing can involve a sequence of operations, DAGs in Airflow will play an important role as they can be individually retried on failure and restarted when operation failed. Scheduler in Airflow makes it convenient for scheduling routine data processing tasks. Docker enables more efficient use of system resources, and makes it faster for software delivery cycles.
+
+
+
 # Server info
-The project is designed to be deployed using Docker and Airflow. The user interface can be accessed by:
+
+The project is designed to be deployed using Docker and Apache Airflow. The user interface can be accessed by:
 
 http://localhost:8080/home
 
@@ -43,7 +48,7 @@ Go to the Docker Desktop UI and launch ![image-20210301214247423](README.assets/
 
 # Postgres Setup
 
-- Load processdb to Postgres database using PGAdmin/ command line, by running processdb.sql located in [airflow_pipeline](https://github.com/Karenzhang7717/airflow_pipeline/tree/karen_dev)/[dae-challenge](https://github.com/Karenzhang7717/airflow_pipeline/tree/karen_dev/dae-challenge)/**x-materials-database**/. Notice that the owner has been changed from "de_candidate" to "karen" in sql script. Set up host = localhost, port = 5433
+- Load processdb to Postgres database using PGAdmin/ command line, by running processdb.sql located in [airflow_pipeline](https://github.com/Karenzhang7717/airflow_pipeline/tree/karen_dev)/[dae-challenge](https://github.com/Karenzhang7717/airflow_pipeline/tree/karen_dev/dae-challenge)/**x-materials-database**/. Notice that the owner has been changed from "de_candidate" to "karen" in sql script. Set up host = localhost, port = 5432(map to 5433 hostmap)
 
 - Direct to the location that PostgreSQL is installed, find pg_hba file (C:\Program Files\PostgreSQL\12\data\pg_hba ) in my case, and change METHOD to trust for all connections like below:
 
