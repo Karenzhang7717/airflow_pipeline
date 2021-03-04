@@ -56,7 +56,6 @@ def read_from_psql(ds, *args, **kwargs):
   
     #df_material_proc1 = pd.DataFrame(columns=['uid','material_name','mass_fraction','ball_milling_uid'])
    # df_material_proc1.append(df_material_proc, ignore_index = True)
-    print('!!!!!!')
     with open(tmp_path, 'a', newline='') as fp:
         a = csv.writer(fp, quoting = csv.QUOTE_MINIMAL, delimiter = ',')
         a.writerow(i[0] for i in cursor.description)
@@ -76,12 +75,13 @@ def read_from_txt(ds, *args, **kwargs):
     outfile = open(output, 'a',newline='')
     csvout = csv.writer(outfile)
     #write headers
-    csvout.writerow(['data source','material_uid','Measurement','Probe Resistance (ohm)','Gas Flow Rate (L/min)','Gas Type','Probe Material','Current (mA)','Field Strength (T)','Sample Position','Magnet Reversal'])
+    #csvout.writerow(['data_source','material_uid','Measurement','Probe_Resistance (ohm)','Gas_Flow_Rate_(L/min)','Gas_Type','Probe_Material','Current_(mA)','Field_Strength_(T)','Sample_Position','Magnet_Reversal'])
     files = os.listdir(dirpath)
     regex = re.compile(r'[\n\r\t]')
     #gathers all data uses Hall as the measurement
     
-    df_hall=pd.DataFrame(columns=["data source","material_uid","Measurement","Probe Resistance (ohm)","Gas Flow Rate (L/min)", "Gas Type", "Probe Material", "Current (mA)", "Field Strength (T)", "Sample Position","Magnet Reversal"])
+    df_hall=pd.DataFrame(columns=["material_uid","Measurement","Probe_Resistance_ohm","Gas_Flow_Rate_L_per_min",\
+        "Gas_Type", "Probe_Material", "Current_mA", "Field_Strength_T", "Sample_Position","Magnet_Reversal"])
     for filename in files:
         with open(dirpath + '/' + filename) as afile:
             row=[] # list of values we will be constructing       
@@ -89,33 +89,47 @@ def read_from_txt(ds, *args, **kwargs):
                 line_input = line.strip('" \n') 
                 words=regex.sub(" ",line_input).split(' ')[-1]
                 row.append(words) # adds the retrieved value to our row
-
-               
-            row.insert(0,'X-LABS DATA')
+       
+         #   row.insert(0,'X-LABS DATA')
         
-        if row[2]=='Hall':
+        if row[1]=='Hall':
             df_hall.loc[len(df_hall)]=row
-            print(row)
-            print("*****")
-            print(df_hall)
           #  csvout.writerow(row)
-    print(df_hall)
+   # print(df_hall)
  
-    # connection = psycopg2.connect(user='karen',
-    #                         password='karen',
-    #                         host='host.docker.internal',
-    #                         port='5432',
-    #                         database='postgres')#sets connection to sql database
-    # cursor=connection.cursor()
-    # engine = create_engine('postgresql://karen:passwordkaren@localhost:5432/postgres')
-    # df=[]
-    # #TODO: sql set primary key
-    # df.to_sql('table_name', engine)   #write Hall results to psql database
-    # cursor.execute("")
+    connection = psycopg2.connect(user='karen',
+                            password='karen',
+                            host='host.docker.internal',
+                            port='5432',
+                            database='postgres')#sets connection to sql database
+    cursor=connection.cursor()
+    # cursor.execute("CREATE TABLE IF NOT EXISTS public.lab_hall (\
+    # data_source character varying(30),\
+    # material_uid character varying(40),\
+    # Measurement character varying(20),\
+    # Probe_Resistance_ohm real,\
+    # Gas_Flow_Rate_L_per_min real,\
+    # Gas_Type character varying(10),\
+    # Probe_Material character varying(10),\
+    # Current_mA real,\
+    # Field_Strength_T real,\
+    # Sample_Position real,\
+    # Magnet_Reversal character varying(10))")
+ 
+    engine = create_engine('postgresql://karen:passwordkaren@host.docker.internal:5432/postgres')
+    #cursor.execute("DROP TABLE IF EXISTS lab_hall")
+    #TODO: sql set primary key
+    df_hall.to_sql('lab_hall', engine,if_exists='replace',index=False)   #write Hall results to psql database
+    cursor.execute("SELECT * FROM lab_hall")
+    # data_hall=cursor.fetchall()
+    # df_hall_psql = pd.DataFrame(data_hall)
+    # print(df_hall_psql)
+
 
     #write headers
-    csvout.writerow(['data source','material_uid','Measurement','Pb concentration','Sn concentration','O Concentration','Gas Flow Rate (L/min)','Gas Type','Plasma Temperature (celsius)','Detector Temperature (celsius)','Field Strength (T)','Plasma Observation','Radio Frequency (MHz)'])
+   # csvout.writerow(['data source','material_uid','Measurement','Pb concentration','Sn concentration','O Concentration','Gas Flow Rate (L/min)','Gas Type','Plasma Temperature (celsius)','Detector Temperature (celsius)','Field Strength (T)','Plasma Observation','Radio Frequency (MHz)'])
     #gathers all data uses ICP as the measurement
+    df_icp=pd.DataFrame(columns=['data source','material_uid','Measurement','Pb concentration','Sn concentration','O Concentration','Gas Flow Rate (L/min)','Gas Type','Plasma Temperature (celsius)','Detector Temperature (celsius)','Field Strength (T)','Plasma Observation','Radio Frequency (MHz)'])
     for filename in files:
         with open(dirpath + '/' + filename) as afile:
             row=[] # list of values we will be constructing
@@ -125,6 +139,7 @@ def read_from_txt(ds, *args, **kwargs):
                 row.append(words) # adds the retrieved value to our row
             row.insert(0,'X-LABS DATA')
         if row[2]=='ICP':
-            csvout.writerow(row)
-    
-    outfile.close()
+            df_icp.loc[len(df_icp)]=row
+            #csvout.writerow(row)
+    print(df_icp)
+    #outfile.close()
