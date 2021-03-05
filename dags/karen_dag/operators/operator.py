@@ -1,14 +1,18 @@
+import csv
+import os
+import re
+from datetime import datetime, timedelta
+from itertools import islice
+
+import pandas as pd
+import psycopg2
+import psycopg2.extras
 from airflow.operators.python import PythonOperator
 from airflow.utils.decorators import apply_defaults
-import psycopg2, psycopg2.extras
-from datetime import datetime, timedelta
-import os
-import csv
-import re
-from itertools import islice
-import pandas as pd
 from pandas.io.json import json_normalize
 from sqlalchemy import create_engine
+
+#this file is an operator for the DAG.
 
 connection = psycopg2.connect(user='karen',
                             password='karen',
@@ -19,26 +23,22 @@ dirpath = '/opt/airflow/logs/x-lab-data'
 files = os.listdir(dirpath)
 regex = re.compile(r'[\n\r\t]')
 
-
 def read_from_psql(ds, *args, **kwargs):
     '''A dag function that reads data from Procurement and X-processing's psql database and saves the queried data to the master csv file.
     '''
-    #query data from ball_milling table
-    request='SELECT * FROM ball_milling'
+    request_ball_milling='SELECT * FROM ball_milling' #query data from ball_milling table
     cursor=connection.cursor()
-    cursor.execute(request)
+    cursor.execute(request_ball_milling)
     data_ball_milling=cursor.fetchall()
     df_ball_milling = pd.DataFrame(data_ball_milling,columns=["uid","process_name","milling_time", "milling_time_units", "milling_speed", "milling_speed_units", "output_material_name", "output_material_uid", "hot_press_uid"])
     
-    #query data from hot_press table 
-    request2='SELECT * FROM hot_press'
-    cursor.execute(request2)
+    request_hot_press='SELECT * FROM hot_press'  #query data from hot_press table 
+    cursor.execute(request_hot_press)
     data_hot_press=cursor.fetchall()
     df_hot_press = pd.DataFrame(data_hot_press,columns=["uid", "process_name", "hot_press_temperature", "hot_press_temperature_units", "hot_press_pressure", "hot_press_pressure_units", "hot_press_time", "hot_press_time_units", "output_material_name", "output_material_uid"])
-  
-    #query data from material_procurement table    
-    request3='SELECT * FROM material_procurement'
-    cursor.execute(request3)
+       
+    request_material_procurement='SELECT * FROM material_procurement' #query data from material_procurement table 
+    cursor.execute(request_material_procurement)
     data_material_proc=cursor.fetchall()
     df_material_proc = pd.DataFrame(data_material_proc,columns=['uid','material_name','mass_fraction','ball_milling_uid'])
   
@@ -66,10 +66,6 @@ def read_from_txt_hall(ds, *args, **kwargs):
     cursor=connection.cursor()
     engine = create_engine('postgresql://karen:passwordkaren@host.docker.internal:5432/postgres') #connects to postgres database
     df_hall.to_sql('lab_hall', engine,if_exists='replace',index=False)   #write the dataframe to psql database
-    # cursor=connection.cursor()
-    # cursor.execute("ALTER TABLE ONLY lab_hall ADD CONSTRAINT lab_hall_pkey PRIMARY KEY (material_uid);") #add primary key
-    # cursor.execute("ALTER TABLE ONLY lab_hall \
-    # ADD CONSTRAINT lab_hall_material_uid_fkey FOREIGN KEY (material_uid) REFERENCES hot_press(output_material_uid);") #add foreign key
     return df_hall.to_json() #returns json object of the dataframe
 
 
@@ -95,13 +91,6 @@ def read_from_txt_icp(ds, *args, **kwargs):
 
     engine = create_engine('postgresql://karen:passwordkaren@host.docker.internal:5432/postgres')#connects to postgres database
     df_icp.to_sql('lab_icp', engine,if_exists='replace',index=False)   #write icp results to psql database
-    # cursor=connection.cursor()
-    # cursor.execute("ALTER TABLE ONLY lab_icp ADD CONSTRAINT lab_icp_pkey PRIMARY KEY (material_uid);") #add primary key
-    # cursor.execute("ALTER TABLE ONLY lab_icp \
-    # ADD CONSTRAINT lab_icp_material_uid_fkey FOREIGN KEY (material_uid) REFERENCES hot_press(output_material_uid);") #add foreign key
-    # data_icp=cursor.fetchall()
-    # df_icp_psql = pd.DataFrame(data_icp)
-    # print(df_icp_psql)
     return df_icp.to_json()
  
  
