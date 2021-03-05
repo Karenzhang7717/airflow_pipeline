@@ -1,6 +1,8 @@
-The project is the Airflow and Docker. Since processing data from X-lab and X-processing can involve a sequence of operations, DAGs in Airflow will play an important role as they can be individually retried on failure and restarted when operation failed. Scheduler in Airflow makes it convenient for scheduling routine data processing tasks. Docker enables more efficient use of system resources, and makes it faster for software delivery cycles.
+![image-20210304180232136](README.assets/image-20210304180232136.png)
 
-This project is a Apache Airflow pipeline. The setup is done using Docker. These images can be deployed locally or to the cloud. ![image-20210304180232136](C:\Users\yuton\AppData\Roaming\Typora\typora-user-images\image-20210304180232136.png)
+This project is a Apache Airflow pipeline. The setup is done using Docker. These images can be deployed locally or to the cloud.  Since processing data from X-lab and X-processing can involve a sequence of operations, DAGs in Airflow will play an important role as they can be individually retried on failure and restarted when operation failed. Scheduler in Airflow makes it convenient for scheduling routine data processing tasks. Docker enables more efficient use of system resources, and makes it faster for software delivery cycles.
+
+A scheduler is set to make automatic updates every 10 minutes to bring in new data if added. To make X-Lab's data more manageable, a dataframe is generated first by reading the txt files, then it is imported to the Postgres database.
 
 # Server info
 
@@ -15,7 +17,7 @@ Please find instructions for setting up below:
 
 - Follow instructions from [here](http://airflow.apache.org/docs/apache-airflow/stable/start/docker.html) to download Docker Desktop
 
-- clone this repo, and then **cd into the directory where this repo is located**
+- clone this repo, and then **cd into the airflow_pipeline folder**
 - Run commands below
 
 ##### Init
@@ -46,7 +48,9 @@ Go to the Docker Desktop UI and launch ![image-20210301214247423](README.assets/
 
     -password: airflow
 
-# Postgres Setup
+  
+
+# ![Screenshot3](README.assets/Screenshot3.png)Postgres Setup
 
 - Load processdb to Postgres database using PGAdmin/ command line, by running processdb.sql located in [airflow_pipeline](https://github.com/Karenzhang7717/airflow_pipeline/tree/karen_dev)/[dae-challenge](https://github.com/Karenzhang7717/airflow_pipeline/tree/karen_dev/dae-challenge)/**x-materials-database**/. Notice that the owner has been changed from "de_candidate" to "karen" in sql script. Set up host = localhost, port = 5432(map to 5433 hostmap)
 
@@ -72,6 +76,11 @@ Go to the Docker Desktop UI and launch ![image-20210301214247423](README.assets/
 
 - The graph view should look like this:
 
-  ![image-20210303124106362](README.assets/image-20210303124106362.png)
+  ![image-20210303124106362](README.assets/screenshot.png)
+
+- View DAG log:
+
+  ![Screenshot2](README.assets/Screenshot2.png)
 
 - Go to the location that the repo is stored, the generated master_db.csv is located in the logs folder (e.g. D:\Karen\airflow_pipeline\logs)
+
