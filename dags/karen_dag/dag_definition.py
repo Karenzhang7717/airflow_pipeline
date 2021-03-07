@@ -1,15 +1,14 @@
 from airflow.models import DAG
-from datetime import datetime, timedelta
 from airflow.operators.dummy import DummyOperator
-import json  # https://bigdata-etl.com/apache-airflow-create-dynamic-dag/
 from airflow.operators.python import PythonOperator
-from karen_dag.operators.operator import read_from_psql
+from datetime import datetime, timedelta
+import json 
+import os
+from karen_dag.operators.operator import read_from_psql,read_from_txt_hall,read_from_txt_icp,generate_master_csv
 
 
-def create_dag(dag_id,
-               schedule,
-               default_args,
-               conf):
+def create_dag(dag_id,schedule,default_args,conf):
+    '''Task code that creates dags'''
     dag = DAG(dag_id, default_args=default_args, schedule_interval=schedule)
 
     with dag:
@@ -17,39 +16,48 @@ def create_dag(dag_id,
             task_id='start_tasks',
             dag=dag
         )
-        karen = PythonOperator(
-            task_id='karens_job_interview',
-            python_callable=read_from_psql,
-            # postgre_conn_id='karen',
-            # schema='karen',
-            dag=dag
-        )
-
-        karen_taks2 = PythonOperator(
-            task_id='karens_job_interview2',
+        Procurement_and_x_processing = PythonOperator(
+            task_id='data_from_psql',
             python_callable=read_from_psql,
             dag=dag
         )
 
+        x_material_hall = PythonOperator(
+            task_id='data_from_txt_hall',
+            python_callable=read_from_txt_hall,
+            dag=dag
+        )
+        x_material_icp = PythonOperator(
+            task_id='data_from_txt_icp',
+            python_callable=read_from_txt_icp,
+            dag=dag
+        )
+        generate_csv = PythonOperator(
+            task_id='generate_csv',
+            python_callable=generate_master_csv,
+            dag=dag
+        )
 
-        init >> karen >> karen_taks2
+
+
+        init >> Procurement_and_x_processing >> x_material_hall >> x_material_icp>>generate_csv
 
         return dag
 
 
 def generate_dag_from_config():
-    import os
+    '''Task code that generates dags from configuration'''
     dir_path = os.path.dirname(os.path.realpath(__file__))
     with open(os.path.join(dir_path, 'config.json')) as json_data:
         conf = json.load(json_data)
         schedule = conf['schedule']
         dag_id = conf['name']
-
+        #sets arguments of the configuration
         args = {
-            'owner': 'deeptendies',
+            'owner': 'karen',
             'depends_on_past': False,
             'start_date': datetime.now(),
-            'email': ['deeptendies@gmail.com'],
+            'email': ['karenzhang7717@gmail.com'],
             'email_on_failure': False,
             'email_on_retry': False,
             'retries': 1,

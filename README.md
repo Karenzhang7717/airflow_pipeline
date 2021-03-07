@@ -1,32 +1,24 @@
+![image-20210304180232136](README.assets/image-20210304180232136.png)
+
+This project is a Apache Airflow pipeline. The setup is done using Docker. These images can be deployed locally or to the cloud.  Since processing data from X-lab and X-processing can involve a sequence of operations, DAGs in Airflow will play an important role as they can be individually retried on failure and restarted when operation failed. Scheduler in Airflow makes it convenient for scheduling routine data processing tasks. Docker enables more efficient use of system resources, and makes it faster for software delivery cycles.
+
+A scheduler is set to make automatic updates every 10 minutes to bring in new data if added. To make X-Lab's data more manageable, a dataframe is generated first by reading the txt files, then it is imported to the Postgres database.
+
 # Server info
-http://34.210.68.49:8080/
 
-# connect to the vm instance:
+The project is designed to be deployed using Docker and Apache Airflow. The user interface can be accessed by:
 
-```
-stan@stan-ryzenrig:~/Downloads$ chmod 600 LightsailDefaultKey-us-west-2.pem 
-stan@stan-ryzenrig:~/Downloads$ ssh -i LightsailDefaultKey-us-west-2.pem ubuntu@34.210.68.49
-```
+http://localhost:8080/home
+
+Please find instructions for setting up below:
 
 
-# update your deployment
-after ssh into the vm
-```
-ubuntu@ip-172-26-13-211:~$ cd airflow_pipeline/
-ubuntu@ip-172-26-13-211:~/airflow_pipeline$ git fetch
-ubuntu@ip-172-26-13-211:~/airflow_pipeline$ git pull
-```
+# Docker Setup
 
+- Follow instructions from [here](http://airflow.apache.org/docs/apache-airflow/stable/start/docker.html) to download Docker Desktop
 
-# Airflow Setup
-
-http://airflow.apache.org/docs/apache-airflow/stable/start/docker.html
-
-~~`curl -LfO 'https://airflow.apache.org/docs/apache-airflow/2.0.1/docker-compose.yaml'`~~
-
-Don't run above script if using custom build image
-
-clone this repo, and then **cd into the directory where this repo is located**
+- clone this repo, and then **cd into the airflow_pipeline folder**
+- Run commands below
 
 ##### Init
 
@@ -44,60 +36,51 @@ docker-compose up airflow-init
 compose up
 
 ```
-//docker-compose up --build -d
+docker-compose up --build -d
 ```
-docker-compose up -d
-~~`docker-compose up -d`~~ (if custom building)
+Go to the Docker Desktop UI and launch ![image-20210301214247423](README.assets/image-20210303120443790.png)]
 
-when done & ready to purge
+# Airflow Setup
 
-```
-docker-compose down --volumes
-docker-compose down --volumes --rmi all
-```
-```
-docker kill $(docker ps -q) # stop all containers:
-docker rm $(docker ps -a -q) # remove all containers
-docker rmi -f $(docker images -a -q)
-```
+- Login information: 
 
+    -username:airflow
 
+    -password: airflow
 
-[ssh into airflow pod](https://phase2.github.io/devtools/common-tasks/ssh-into-a-container/)
+  
 
-```
-docker exec -it airflow-tendie_airflow-webserver_1 /bin/bash
-docker exec -it airflow-tendie_airflow-webserver_1 pip install -r requirements.txt
-docker exec -it airflow-tendie_airflow-worker_1 pip install -r requirements.txt
-```
+# ![Screenshot3](README.assets/Screenshot3.png)Postgres Setup
 
-[deletes everything](https://stackoverflow.com/questions/44785585/docker-how-to-delete-all-local-docker-images)
+- Load processdb to Postgres database using PGAdmin/ command line, by running processdb.sql located in [airflow_pipeline](https://github.com/Karenzhang7717/airflow_pipeline/tree/karen_dev)/[dae-challenge](https://github.com/Karenzhang7717/airflow_pipeline/tree/karen_dev/dae-challenge)/**x-materials-database**/. Notice that the owner has been changed from "de_candidate" to "karen" in sql script. Set up host = localhost, port = 5432(map to 5433 hostmap)
 
-```
-docker system prune -a --volumes
-```
+- Direct to the location that PostgreSQL is installed, find pg_hba file (C:\Program Files\PostgreSQL\12\data\pg_hba ) in my case, and change METHOD to trust for all connections like below:
 
-restart webserver
+  ![image-20210303122513814](README.assets/image-20210303122513814.png)
 
-```
-docker restart airflow-tendie_airflow-webserver_1
-```
+- Grant access for user karen:
 
+  cd into the location to PostgresSQL's bin, run the command below:
 
+  C:\Program Files\PostgreSQL\12\bin>**psql.exe -U [*superuser*]**
 
-```
-docker exec -it airflow-karen_postgres_karen_interview_1
+  Now you are logged in as the superuser, you should see "GRANT" on console. Run command below:
 
-echo "host all  all    0.0.0.0/0  md5" >> /var/lib/postgresql/data/pg_hba.conf
-echo "host all  all    ::/0  md5" >> /var/lib/postgresql/data/pg_hba.conf
-```
+  GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO karen;
 
+  # Trigger DAG and view result
 
+- Trigger the dag:
 
+  ![image-20210303124004097](README.assets/image-20210303124004097.png)
 
+- The graph view should look like this:
 
-# connection
+  ![image-20210303124106362](README.assets/screenshot.png)
 
-![image-20210301214247423](README.assets/image-20210301214247423.png)
+- View DAG log:
 
-set connection like this
+  ![Screenshot2](README.assets/Screenshot2.png)
+
+- Go to the location that the repo is stored, the generated master_db.csv is located in the logs folder (e.g. D:\Karen\airflow_pipeline\logs)
+
